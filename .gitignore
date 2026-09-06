@@ -1,6 +1,7 @@
 # Large Datasets
 CivicIssuesImageDataset/
 
+# Pycache and virtual environments
 __pycache__/
 .env
 venv/

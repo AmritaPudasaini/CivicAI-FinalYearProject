@@ -1,0 +1,653 @@
+description,category,urgency_score,urgency_level,location_type,category_label,urgency_label
+Discarded bottles and takeaway containers are blocking part of the pedestrian path beside the public access route.,trash,5.0,medium,public,7,3
+"Public gutter breeding mosquitoes since yesterday, the area has an increased disease risk.",drainage,6.5,high,residential,1,1
+"Community hall left with broken tiles in a commercial area, the same place was damaged repeatedly.",vandalism,6.0,medium,commercial,8,3
+"Tourist vans blocking a market loading area in Hetauda since yesterday, deliveries and shoppers are delayed.",illegal_parking,5.5,medium,market,3,3
+"Roadwork sign hanging from one bolt on a highway, motorcycles are braking near the barriers.",road_damaged_sign,8.5,high,highway,6,1
+Garbage has been left in an open place and is spreading around. Dogs are opening the bags and spreading the waste.,garbage,8.0,high,residential,2,1
+A hole has formed in the road and it is difficult for vehicles to pass. Drivers are starting to avoid the spot.,pothole,5.0,medium,residential,5,3
+"Residential drain blocked on the highway since yesterday, waterlogging is slowing heavy traffic.",drainage,8.5,high,highway,1,1
+"School-side drain blocked on the highway, waterlogging is slowing heavy traffic.",drainage,8.5,high,highway,1,1
+"सरकारी सम्पत्ति राजमार्ग मा बिग्रेको छ, कसैले केही गरेन। छिटो सफा गर्नुपर्यो।",vandalism,8.3,high,highway,8,1
+Discarded bottles and takeaway containers are blocking part of the pedestrian path near the shopping area.,trash,9.0,high,commercial,7,1
+A pothole is making vehicles move to the other side of the road. Cars are moving around it to avoid the hole.,pothole,5.0,medium,school,5,3
+"Cargo vans left over a zebra crossing, pedestrians are walking into traffic.",illegal_parking,8.0,high,public,3,1
+"Health-post wall scraped across the surface near an industrial road, emergency information is partly blocked.",vandalism,8.0,high,industrial,8,1
+"Storm-water drain blocked on the highway after recent rain, waterlogging is slowing heavy traffic.",drainage,8.5,high,highway,1,1
+"Ward-office gate badly scratched near a hospital, emergency contact details are blocked.",vandalism,8.0,high,hospital,8,1
+"One-way sign faded and unreadable in Janakpur, vehicles are entering from conflicting directions.",road_damaged_sign,9.5,critical,school,6,0
+"Community drain overflowing with sewage, residents face a serious health risk.",drainage,9.5,critical,residential,1,0
+"Main sewer line breeding mosquitoes since yesterday, the area has an increased disease risk.",drainage,7.0,high,residential,1,1
+"Trucks blocking a public bus stop since yesterday, buses are stopping in the traffic lane.",illegal_parking,7.5,high,commercial,3,1
+"Storm-water drain blocked with plastic waste, rainwater is flooding the road.",drainage,8.0,high,residential,1,1
+"Uncollected trash piling up outside homes, beside the school.",domestic_trash,7.5,high,school,0,1
+There is a pothole where water collects after rain. It is causing vehicles to shake while crossing.,pothole,5.5,medium,hospital,5,3
+ढल लाइन आवासीय क्षेत्र मा फुटेर दुर्गन्ध आइरहेको छ। छिटो मर्मत गर्नुपर्यो।,drainage,7.4,high,residential,1,1
+Public waste has accumulated beside the entrance and is creating an unpleasant smell for visitors outside several houses.,trash,5.5,medium,residential,7,3
+There is a bad smell coming from the garbage near the street. Some bags have been torn open.,garbage,2.5,low,residential,2,2
+"Government vehicles left beside a no-parking sign since yesterday, traffic is moving slowly.",illegal_parking,5.0,medium,commercial,3,3
+The waste collection has not come for a few days. The bin is too full to hold more waste.,garbage,5.0,medium,residential,2,3
+"Public waste has accumulated beside the entrance and is creating an unpleasant smell for visitors, near the school entrance.",trash,7.5,high,school,7,1
+"Broken barrier blocking part of the road, near the school.",infrastructure,9.0,high,school,4,1
+"Several bags of household rubbish are blocking part of the footpath outside a row of homes, beside the highway access route.",domestic_trash,4.5,medium,highway,0,3
+"Roadside drain filled with mud after rain, water is entering nearby shops.",drainage,7.0,high,market,1,1
+"Rental cars parked at a busy junction after recent rain, drivers cannot see approaching vehicles.",illegal_parking,8.5,high,market,3,1
+"School buses parked fully on the footpath in Biratnagar, pedestrians are forced onto the road.",illegal_parking,7.0,high,residential,3,1
+The garbage bin is full and waste is falling onto the ground. Some bags have been torn open.,garbage,8.0,high,residential,2,1
+"Trucks left near an industrial gate since yesterday, large vehicles have little turning space.",illegal_parking,7.0,high,industrial,3,1
+"Buses blocking a hospital entrance since yesterday, ambulances are delayed.",illegal_parking,9.0,critical,hospital,3,0
+Plastic bags and food waste are spread around the area. There are food leftovers mixed with plastic.,garbage,8.0,high,residential,2,1
+"Community hall covered with spray-painted tags in a commercial area, residents have requested cleaning.",vandalism,4.0,low,commercial,8,2
+"Cross-road drain blocked on the highway since yesterday, waterlogging is slowing heavy traffic.",drainage,8.5,high,highway,1,1
+"Sharp-bend sign faded and unreadable in a public area, motorcycles are braking suddenly.",road_damaged_sign,7.5,high,public,6,1
+फोहोरको बोरा च्यातिएर सार्वजनिक स्थान को बाटोभरि छरिएको छ। मानिसहरूलाई धेरै समस्या भएको छ।,trash,5.7,low,public,7,2
+"Motorcycles left near an industrial gate, large vehicles have little turning space.",illegal_parking,6.0,medium,industrial,3,3
+सडक किनारमा फोहोरको थुप्रो लागेर व्यापारिक क्षेत्र बाट हिँड्न गाह्रो भएको छ। बाटो र क्षेत्र फोहोर भइरहेको छ।,trash,5.5,medium,commercial,7,3
+The road surface is broken and there is a pothole in the middle. Only a small part of the road is affected.,pothole,3.5,low,residential,5,2
+"Delivery vans blocking a public bus stop after recent rain, buses are stopping in the traffic lane.",illegal_parking,7.5,high,commercial,3,1
+Household waste has been left outside for several days. The waste is making the area unpleasant.,garbage,2.5,low,market,2,2
+"Sharp-bend sign missing from its pole in a public area, drivers are approaching the hazard too quickly.",road_damaged_sign,7.5,high,public,6,1
+"School-zone sign knocked down on a highway, children are crossing without warning.",road_damaged_sign,8.5,high,highway,6,1
+"Yaha fohor dherai jamma bhako cha, uthauna paryo. Yesto fohor uthauna paryo.",garbage,7.5,high,residential,2,1
+The road is uneven because of a pothole. The hole is making the road uncomfortable to use.,pothole,7.0,high,residential,5,1
+"Buses left near an industrial gate in Bharatpur, large vehicles have little turning space.",illegal_parking,6.0,medium,industrial,3,3
+A waste collection point is overflowing and loose rubbish is spreading into the nearby road near the main road junction.,trash,6.5,medium,highway,7,3
+Yaha fohor ko smell dherai aauchha. Yesto fohor uthauna paryo.,garbage,2.0,low,school,2,2
+Rubbish piled up beside the walkway on the public walkway.,trash,9.0,high,public,7,1
+There is a hole on the street that drivers are trying to avoid. It is on a road used by many people.,pothole,3.5,low,school,5,2
+There is rubbish around the road and it needs cleaning. The smell is strong and many people are complaining.,garbage,8.5,high,hospital,2,1
+"Public notice board badly scratched in a commercial area, visitors are using the wrong entrance.",vandalism,7.0,high,commercial,8,1
+A pothole is making the road difficult to use at night. The edge of the road is also starting to break.,pothole,2.0,low,hospital,5,2
+"Public notice board left with official lettering blacked out in a commercial area, part of the public notice cannot be read.",vandalism,6.0,medium,commercial,8,3
+"Cross-road drain leaking near a hospital, dirty water is crossing the entrance.",drainage,8.0,high,hospital,1,1
+"Government vehicles blocking a public bus stop since yesterday, buses are stopping in the traffic lane.",illegal_parking,7.0,high,commercial,3,1
+"Bridge-load sign faded and unreadable on a residential road, truck drivers cannot confirm the load limit.",road_damaged_sign,7.5,high,residential,6,1
+सडक किनारमा फोहोरको थुप्रो लागेर औद्योगिक क्षेत्र बाट हिँड्न गाह्रो भएको छ। बाटो र क्षेत्र फोहोर भइरहेको छ।,trash,3.7,medium,industrial,7,3
+Wind has scattered plastic waste and paper across the area around an overflowing public bin beside the highway access route.,trash,9.0,high,highway,7,1
+There are several damaged spots and potholes along the street. The road section is breaking further and traffic is being affected.,pothole,9.0,critical,residential,5,0
+Collapsed drain leaving an open gap outside houses.,infrastructure,7.5,high,residential,4,1
+A hole in the road is causing vehicles to shake while passing. The road surface around the hole is also breaking.,pothole,6.5,high,hospital,5,1
+"Microbuses parked at a busy junction, drivers cannot see approaching vehicles.",illegal_parking,8.5,high,market,3,1
+"Public notice board covered with illegal advertising in a commercial area, part of the public notice cannot be read.",vandalism,6.0,medium,commercial,8,3
+"School-zone sign hanging from one bolt on a highway, pedestrians cannot find the crossing point.",road_damaged_sign,6.5,high,highway,6,1
+"Loose domestic rubbish has been blown across the street and into the drainage area after strong wind, near nearby homes.",domestic_trash,7.5,high,residential,0,1
+"Ward-office gate covered with political slogans near a hospital, emergency contact details are blocked.",vandalism,7.5,high,hospital,8,1
+The road surface is broken and there is a pothole in the middle. It has been there for a few days.,pothole,3.0,low,market,5,2
+There is a pothole on the road and vehicles have to slow down. The hole is making the road uncomfortable to use.,pothole,9.5,critical,market,5,0
+"Footbridge railing badly scratched on a residential road, the damage may worsen without repair.",vandalism,4.5,medium,residential,8,3
+Collapsed drain leaving an open gap at the highway shoulder.,infrastructure,7.0,high,highway,4,1
+A hole in the road is causing vehicles to shake while passing. The damaged section is making traffic slower.,pothole,6.5,high,residential,5,1
+"Public bin overflowing onto the pavement, near the hospital.",trash,9.5,high,hospital,7,1
+The garbage bin is full and waste is falling onto the ground. Children are passing through the area every day.,garbage,8.5,high,hospital,2,1
+Waste is blocking part of the footpath. The waste is spreading after people pass by.,garbage,3.0,low,market,2,2
+"Residential drain overflowing near a school, children are walking through dirty water.",drainage,8.0,high,school,1,1
+The public bin is full and people are putting bags beside it. The waste is visible from the nearby road.,garbage,9.5,critical,residential,2,0
+A waste collection point is overflowing and loose rubbish is spreading into the nearby road along the highway shoulder.,trash,6.5,medium,highway,7,3
+Public bin overflowing onto the pavement at the road junction.,trash,8.0,high,highway,7,1
+A pothole is making the road difficult to use at night. Water collects inside the hole after rain.,pothole,3.5,low,residential,5,2
+"School-zone sign hanging from one bolt on a highway, children are crossing without warning.",road_damaged_sign,8.0,high,highway,6,1
+"Main sewer line overflowing near a school, children are walking through dirty water.",drainage,8.0,high,school,1,1
+There are many empty bottles and plastic bags lying around. The area can be cleaned during the normal collection.,garbage,3.0,low,school,2,2
+A pothole is getting larger after rain. Rainwater is collecting in the hole.,pothole,2.0,low,residential,5,2
+सडकको सतह भत्किएर राजमार्ग मा गाडी चलाउन गाह्रो भएको छ। मर्मत सम्भार आवश्यक छ।,infrastructure,7.8,high,highway,4,1
+Mixed rubbish has accumulated around the waste collection point near the busy commercial area outside several houses.,trash,6.5,medium,residential,7,3
+Domestic waste is overflowing from a collection area and spreading into the nearby residential road.,domestic_trash,4.5,medium,hospital,0,3
+The pothole is filled with rainwater and its depth is hard to see. The damaged section is making traffic slower.,pothole,8.0,high,school,5,1
+बाटो साँघुरो भएर औद्योगिक क्षेत्र मा ट्राफिक जाम भइरहेको छ पार्किङका कारण। चाँडै कारबाही लिनुपर्यो।,illegal_parking,6.5,medium,industrial,3,3
+"School-zone sign fallen into a drain on a highway, children are crossing without warning.",road_damaged_sign,9.0,critical,highway,6,0
+"Bato ko surface futeko cha, gadi hallaera jancha. Repair garnu paryo.",pothole,5.0,medium,residential,5,3
+"School-side drain collapsed beside the road, pedestrians could fall into the opening.",drainage,8.0,high,public,1,1
+"Bus-stop sign missing from its pole in Biratnagar, buses are stopping in the traffic lane.",road_damaged_sign,7.0,high,commercial,6,1
+"No-entry sign hanging from one bolt in Lalitpur, drivers are taking wrong turns and causing traffic.",road_damaged_sign,6.5,high,hospital,6,1
+"Microbuses parked fully on the footpath after recent rain, pedestrians are forced onto the road.",illegal_parking,7.0,high,residential,3,1
+"Motorcycles left over a zebra crossing after recent rain, pedestrians are walking into traffic.",illegal_parking,8.0,high,public,3,1
+"Health-post wall covered with political slogans near an industrial road, emergency information is partly blocked.",vandalism,7.5,high,industrial,8,1
+Cracked pavement creating a trip hazard at the highway.,infrastructure,3.5,low,highway,4,2
+"Public wall covered with pasted flyers near a school, residents have requested cleaning.",vandalism,4.5,medium,school,8,3
+"Private cars parked fully on the footpath, pedestrians are forced onto the road.",illegal_parking,8.0,high,residential,3,1
+"Rental cars parked along a highway shoulder since yesterday, fast traffic is swerving around them.",illegal_parking,7.5,high,highway,3,1
+"Pickup vehicles parked across a school gate after recent rain, children are entering through traffic.",illegal_parking,8.5,high,school,3,1
+The road surface has broken away and left a hole. The hole is difficult to see when filled with rainwater.,pothole,7.0,high,market,5,1
+Food waste and plastic packaging are scattered around the neighborhood after garbage bags were damaged near the warehouse area.,domestic_trash,8.0,high,industrial,0,1
+"Several households have placed overflowing rubbish bags along the roadside, narrowing the pedestrian path beside the school boundary.",domestic_trash,8.5,high,school,0,1
+प्लास्टिक र कागजको फोहोर बतासले उडेर अस्पताल तिर फैलिएको छ। बाटो र क्षेत्र फोहोर भइरहेको छ।,trash,8.7,critical,hospital,7,0
+"Taxis left beside a no-parking sign since yesterday, traffic is moving slowly.",illegal_parking,5.0,medium,commercial,3,3
+"Tourist vans left beside a no-parking sign after recent rain, traffic is moving slowly.",illegal_parking,5.0,medium,commercial,3,3
+"Parking restriction sign turned toward the wrong road near a hospital, drivers cannot identify the restricted section.",road_damaged_sign,4.5,medium,hospital,6,3
+Household waste has been left beside the road for several days and is attracting insects and stray animals beside the school boundary.,domestic_trash,8.5,high,school,0,1
+"Public notice board left with official lettering blacked out in a commercial area, emergency contact details are blocked.",vandalism,7.5,high,commercial,8,1
+The garbage pickup has been irregular and waste is staying outside. The collection has been missed repeatedly and the pile is growing.,garbage,8.5,high,market,2,1
+"Narrow-bridge sign knocked down near a market, drivers are approaching the hazard too quickly.",road_damaged_sign,7.0,high,market,6,1
+The garbage pickup has been irregular and waste is staying outside. Flies are gathering around the waste.,garbage,8.0,high,residential,2,1
+"The pedestrian crossing surface is cracked and uneven, creating a risk for people crossing the road, along the industrial access road.",infrastructure,5.5,medium,industrial,4,3
+A hole in the road is causing vehicles to shake while passing. Motorcycles are at risk of losing balance near the hole.,pothole,7.5,high,residential,5,1
+"Roadwork sign faded and unreadable on a highway, motorcycles are braking near the barriers.",road_damaged_sign,7.5,high,highway,6,1
+"Hospital access drain blocked on the highway, waterlogging is slowing heavy traffic.",drainage,7.5,high,highway,1,1
+"Construction vehicles parked along a highway shoulder since yesterday, fast traffic is swerving around them.",illegal_parking,8.0,high,highway,3,1
+Loose litter is spreading around an overflowing bin and making the public area difficult to keep clean along the student walkway.,trash,5.5,medium,school,7,3
+"Cars parked across a school gate in Kathmandu after recent rain, children are entering through traffic.",illegal_parking,8.0,high,school,3,1
+"Main sewer line leaking near a hospital after recent rain, dirty water is crossing the entrance.",drainage,8.0,high,hospital,1,1
+"Hospital access drain collapsed beside the road after recent rain, pedestrians could fall into the opening.",drainage,8.5,high,public,1,1
+"Road divider marked with offensive words on a highway, sharp parts are exposed beside pedestrians.",vandalism,8.5,high,highway,8,1
+"Landslide warning sign bent away from traffic near a market, night drivers cannot see the hazard.",road_damaged_sign,8.0,high,market,6,1
+"The pedestrian crossing surface is cracked and uneven, creating a risk for people crossing the road along the student walkway.",infrastructure,3.5,low,school,4,2
+"Community hall covered with illegal advertising in a commercial area, the same place was damaged repeatedly.",vandalism,6.5,high,commercial,8,1
+"Open drain overflowing with sewage after recent rain, residents face a serious health risk.",drainage,9.5,critical,residential,1,0
+"Health-post wall left with its notice torn down near an industrial road, patients cannot read the service details.",vandalism,5.5,medium,industrial,8,3
+"Main sewer line leaking near a hospital, dirty water is crossing the entrance.",drainage,8.0,high,hospital,1,1
+"Public notice board covered with spray-painted tags in a commercial area, emergency contact details are blocked.",vandalism,7.0,high,commercial,8,1
+Food containers scattered near the shops in the business area.,trash,6.5,medium,commercial,7,3
+"Several paving blocks are loose and uneven near the school entrance, making the walkway unsafe, near the main road junction.",infrastructure,3.5,low,highway,4,2
+"A manhole cover is loose and uneven, creating a dangerous hazard for pedestrians and cyclists.",infrastructure,8.5,high,commercial,4,1
+"Trucks parked on both sides of a narrow road, emergency vehicles cannot pass.",illegal_parking,8.5,high,hospital,3,1
+"Minibuses parked fully on the footpath in Lalitpur after recent rain, pedestrians are forced onto the road.",illegal_parking,8.0,high,residential,3,1
+"Public wall scraped across the surface near a school, the same place was damaged repeatedly.",vandalism,6.5,high,school,8,1
+"Heritage rest house scraped across the surface near a hospital, visitors have complained about disrespect.",vandalism,7.0,high,hospital,8,1
+Public waste left beside the road beside the school.,trash,5.0,medium,school,7,3
+There is a broken section of road near the walking path. People are asking for the road to be repaired.,pothole,7.0,high,residential,5,1
+Yaha fohor ko smell dherai aauchha. Manche haru lai dherai problem bhako cha.,garbage,8.5,high,hospital,2,1
+Uncollected household waste is producing a bad smell and causing complaints from nearby residents along the hospital access road.,domestic_trash,4.5,medium,hospital,0,3
+"Private cars parked at a busy junction in Ghorahi, drivers cannot see approaching vehicles.",illegal_parking,8.0,high,market,3,1
+The road surface is broken and there is a pothole in the middle. Several motorcycles are avoiding the same spot.,pothole,7.5,high,school,5,1
+There is rubbish around the road and it needs cleaning. Children are passing through the area every day.,garbage,7.5,high,residential,2,1
+बिजुलीको पोल बाङ्गिएर राजमार्ग को बाटोमा खतरा सिर्जना भएको छ। सरकारले चाँडै हेर्नुपर्यो।,infrastructure,8.0,high,highway,4,1
+Household garbage has accumulated near the entrance of several houses and is becoming difficult to manage near the hospital entrance.,domestic_trash,5.0,medium,hospital,0,3
+Household waste has been left outside for several days. The area can be cleaned during the normal collection.,garbage,2.5,low,school,2,2
+"One-way sign bent away from traffic near a school, vehicles are entering from conflicting directions.",road_damaged_sign,9.0,critical,school,6,0
+There is waste scattered near the roadside and it needs to be collected. The garbage is blocking access through the area.,garbage,9.0,critical,school,2,0
+"Domestic rubbish has overflowed from bags and spread onto the pavement near nearby houses, beside the highway access route.",domestic_trash,5.0,medium,highway,0,3
+The road has started breaking around the pothole. Motorcycles are at risk of losing balance near the hole.,pothole,8.5,high,market,5,1
+Food waste and plastic packaging are scattered around the neighborhood after garbage bags were damaged.,domestic_trash,9.5,high,hospital,0,1
+A section of concrete near the hospital entrance has broken apart and is obstructing pedestrian access along the public walkway.,infrastructure,6.0,medium,public,4,3
+A hole in the road is causing vehicles to shake while passing. Several motorcycles are avoiding the same spot.,pothole,2.5,low,market,5,2
+The garbage pickup has been irregular and waste is staying outside. The pile is spreading widely and creating a severe sanitation problem.,garbage,9.0,critical,residential,2,0
+"Speed-limit sign turned toward the wrong road in Itahari, drivers cannot confirm the speed restriction.",road_damaged_sign,5.5,medium,commercial,6,3
+"Storm-water drain leaking near a hospital since yesterday, dirty water is crossing the entrance.",drainage,8.0,high,hospital,1,1
+"Covered drain overflowing with sewage since yesterday, residents face a serious health risk.",drainage,9.0,critical,residential,1,0
+"Domestic waste is overflowing from a collection area and spreading into the nearby residential road, near the school entrance.",domestic_trash,4.5,medium,school,0,3
+मूर्ति र शिल्पकला औद्योगिक क्षेत्र मा भत्किएको छ। सरकारले चाँडै हेर्नुपर्यो।,vandalism,4.2,medium,industrial,8,3
+The pothole is filled with rainwater and its depth is hard to see. The broken area is getting wider.,pothole,2.0,low,school,5,2
+"Bus shelter defaced with large drawings near a market, residents have requested cleaning.",vandalism,4.5,medium,market,8,3
+"Pedestrian-crossing sign hidden by branches near an industrial road, pedestrians cannot find the crossing point.",road_damaged_sign,7.0,high,industrial,6,1
+सडक किनारमा फोहोरको थुप्रो लागेर अस्पताल बाट हिँड्न गाह्रो भएको छ। छिटो फोहोर उठाइदिनुपर्यो।,trash,9.4,critical,hospital,7,0
+"Pickup vehicles parked on both sides of a narrow road after recent rain, emergency vehicles cannot pass.",illegal_parking,9.0,critical,hospital,3,0
+Garbage is lying on the street and people are walking around it. There are food leftovers mixed with plastic.,garbage,7.0,high,market,2,1
+"Cracked pavement creating a trip hazard, near the community area.",infrastructure,3.0,low,public,4,2
+"Health-post wall marked with offensive words near an industrial road, emergency information is partly blocked.",vandalism,7.5,high,industrial,8,1
+"Several bags of household rubbish are blocking part of the footpath outside a row of homes, along the highway shoulder.",domestic_trash,8.0,high,highway,0,1
+"Hospital access drain leaking near a hospital since yesterday, dirty water is crossing the entrance.",drainage,8.5,high,hospital,1,1
+"Residential drain leaking near a hospital, dirty water is crossing the entrance.",drainage,8.0,high,hospital,1,1
+There is a bad smell coming from the garbage near the street. Residents are asking for the waste to be picked up.,garbage,9.5,critical,school,2,0
+"Sharp-bend sign cracked with a loose edge in a public area, night drivers cannot see the hazard.",road_damaged_sign,8.0,high,public,6,1
+"स्टप साइन अस्पताल को चोकमा ढलेको छ, गाडीहरू रोकिँदैनन्। मानिसहरूलाई धेरै खतरा भएको छ।",road_damaged_sign,8.9,critical,hospital,6,0
+"Wind has scattered plastic waste and paper across the area around an overflowing public bin, near the community area.",trash,6.5,medium,public,7,3
+"Delivery vans parked on both sides of a narrow road after recent rain, emergency vehicles cannot pass.",illegal_parking,8.5,high,hospital,3,1
+Cracked pavement creating a trip hazard at the public road.,infrastructure,8.0,high,public,4,1
+Several holes are visible on the road surface. The problem is becoming more noticeable each day.,pothole,7.0,high,residential,5,1
+"Ward-office gate defaced with large drawings near a hospital, part of the public notice cannot be read.",vandalism,5.5,medium,hospital,8,3
+There is a pothole where water collects after rain. Cars are moving around it to avoid the hole.,pothole,9.0,critical,residential,5,0
+"School-side drain covered by construction debris since yesterday, water cannot reach the outlet.",drainage,6.5,high,industrial,1,1
+"Sharp-bend sign fallen into a drain in a public area, motorcycles are braking suddenly.",road_damaged_sign,8.0,high,public,6,1
+"Bus shelter covered with pasted flyers near a market, residents have requested cleaning.",vandalism,4.0,low,market,8,2
+A pothole has appeared after the recent rain. The damaged spot is limited to one small area.,pothole,2.0,low,hospital,5,2
+"The pedestrian crossing surface is cracked and uneven, creating a risk for people crossing the road beside the highway access route.",infrastructure,7.0,high,highway,4,1
+"Pedestrian underpass badly scratched on a residential road, the same place was damaged repeatedly.",vandalism,6.5,high,residential,8,1
+A pothole is getting larger after rain. The problem is becoming more noticeable each day.,pothole,9.0,critical,residential,5,0
+सिग्नल बोर्ड औद्योगिक क्षेत्र मा पुरानो भएर मानिसहरूले देख्न सक्दैनन्। नयाँ साइन राख्नुपर्यो।,road_damaged_sign,3.7,medium,industrial,6,3
+"School-side drain giving off a strong smell, nearby residents cannot open windows.",drainage,5.0,medium,residential,1,3
+The highway shoulder is badly damaged and contains loose concrete pieces that could affect traffic beside the factory service route.,infrastructure,7.0,high,industrial,4,1
+Garbage is collecting near houses and the smell is getting worse. Flies are gathering around the waste.,garbage,5.5,medium,school,2,3
+Yaha fohor ko smell dherai aauchha. Please collect it soon.,garbage,8.0,high,hospital,2,1
+"Hospital direction sign covered by posters near a school, visitors need help finding the entrance.",road_damaged_sign,4.5,medium,school,6,3
+"Tourist vans parked at a busy junction, drivers cannot see approaching vehicles.",illegal_parking,8.0,high,market,3,1
+There is a pothole where water collects after rain. It is difficult to see at night.,pothole,2.0,low,market,5,2
+The road has a deep hole that drivers need to avoid. Motorcycles are slowing down at that point.,pothole,7.5,high,hospital,5,1
+"Landslide warning sign bent away from traffic near a market, motorcycles are braking suddenly.",road_damaged_sign,7.5,high,market,6,1
+"Government vehicles parked on both sides of a narrow road after recent rain, emergency vehicles cannot pass.",illegal_parking,9.5,critical,hospital,3,0
+"Household rubbish blocking the pavement, near the hospital.",domestic_trash,3.0,low,hospital,0,2
+"Government vehicles blocking a hospital entrance, ambulances are delayed.",illegal_parking,9.5,critical,hospital,3,0
+"Residential drain collapsed beside the road, pedestrians could fall into the opening.",drainage,8.0,high,public,1,1
+There is a pile of household waste beside the road. There are food leftovers mixed with plastic.,garbage,5.0,medium,residential,2,3
+"Several households have placed overflowing rubbish bags along the roadside, narrowing the pedestrian path near the shopping area.",domestic_trash,9.8,high,commercial,0,1
+"The roadside drain has collapsed and left a deep open gap beside the pedestrian route, near the community area.",infrastructure,5.0,medium,public,4,3
+Garbage bags are broken and the waste is spread across the sidewalk. Some bags have been torn open.,garbage,7.0,high,school,2,1
+"Garbage bags containing food waste have been left open, attracting dogs and spreading rubbish across the street near the hospital entrance.",domestic_trash,8.0,high,hospital,0,1
+Household waste left outside homes on the industrial road.,domestic_trash,8.5,high,industrial,0,1
+A damaged road surface has developed deep potholes that are difficult for vehicles to avoid outside several houses.,infrastructure,8.0,high,residential,4,1
+"School boundary wall covered with political slogans near an industrial road, children can see inappropriate language.",vandalism,7.0,high,industrial,8,1
+"Sharp-bend sign hidden by branches in a public area, motorcycles are braking suddenly.",road_damaged_sign,8.0,high,public,6,1
+The road surface is broken and there is a pothole in the middle. The damaged section is making traffic slower.,pothole,7.0,high,residential,5,1
+The road is uneven because of a pothole. Several vehicles are being affected while passing.,pothole,8.5,high,school,5,1
+"Deep potholes damaging the road surface, outside houses.",infrastructure,7.0,high,residential,4,1
+"A large crack has developed across the concrete pavement, creating a serious trip hazard for pedestrians, along the student walkway.",infrastructure,4.5,medium,school,4,3
+There is a hole on the street that drivers are trying to avoid. The damaged section is affecting normal traffic.,pothole,5.0,medium,school,5,3
+"Pedestrian underpass marked with offensive words on a residential road, the markings are small but visible.",vandalism,3.0,low,residential,8,2
+"One-way sign missing from its pole near a school, vehicles are entering from conflicting directions.",road_damaged_sign,8.5,high,school,6,1
+There is food waste on the street and stray dogs are spreading it. It is limited to a few bags.,garbage,3.0,low,market,2,2
+Domestic waste is overflowing from a collection area and spreading into the nearby residential road beside the factory service route.,domestic_trash,4.0,medium,industrial,0,3
+"Storm-water drain overflowing with sewage since yesterday, residents face a serious health risk.",drainage,9.5,critical,residential,1,0
+"Discarded household waste is scattered around the neighborhood and creating a visible sanitation problem, near the school entrance.",domestic_trash,4.0,medium,school,0,3
+"School-side drain leaking near a hospital since yesterday, dirty water is crossing the entrance.",drainage,8.0,high,hospital,1,1
+"Public waste left beside the road, near the school.",trash,9.5,high,school,7,1
+"The highway shoulder is badly damaged and contains loose concrete pieces that could affect traffic, near the school entrance.",infrastructure,9.0,high,school,4,1
+The waste collection has not come for a few days. The pile is becoming noticeable on the street.,garbage,5.5,medium,market,2,3
+A section of concrete near the hospital entrance has broken apart and is obstructing pedestrian access near the hospital entrance.,infrastructure,7.5,high,hospital,4,1
+"Landslide warning sign cracked with a loose edge in Nepalgunj, motorcycles are braking suddenly.",road_damaged_sign,8.0,high,market,6,1
+"Road divider covered with pasted flyers on a highway, sharp parts are exposed beside pedestrians.",vandalism,8.0,high,highway,8,1
+"Public wall left with broken tiles near a school, the same place was damaged repeatedly.",vandalism,5.5,medium,school,8,3
+Broken barrier blocking part of the road near shops.,infrastructure,6.0,medium,commercial,4,3
+"Public notice board marked with offensive words in a commercial area, emergency contact details are blocked.",vandalism,7.5,high,commercial,8,1
+"Delivery vans parked at a busy junction, drivers cannot see approaching vehicles.",illegal_parking,8.5,high,market,3,1
+A pothole is causing buses and cars to slow down. The edge of the road is also starting to break.,pothole,9.5,critical,market,5,0
+"Market drain damaged near a commercial area, wastewater is spreading on the footpath.",drainage,7.5,high,commercial,1,1
+"Buses left over a zebra crossing, pedestrians are walking into traffic.",illegal_parking,8.0,high,public,3,1
+A damaged retaining wall is showing visible cracks and appears unstable beside the access road beside the highway access route.,infrastructure,5.0,medium,highway,4,3
+"Broken barrier blocking part of the road, on the highway.",infrastructure,7.0,high,highway,4,1
+Deep potholes damaging the road surface near homes.,infrastructure,5.0,medium,residential,4,3
+"Hospital direction sign fallen into a drain in Bhaktapur, ambulances are missing the correct access road.",road_damaged_sign,9.0,critical,school,6,0
+"Cargo vans parked across a school gate, children are entering through traffic.",illegal_parking,8.5,high,school,3,1
+Several holes are visible on the road surface. Several motorcycles are avoiding the same spot.,pothole,6.5,high,market,5,1
+A pothole has appeared after the recent rain. It is difficult to see at night.,pothole,9.0,critical,hospital,5,0
+There are several damaged spots and potholes along the street. The damaged spot is limited to one small area.,pothole,3.5,low,school,5,2
+Waste is blocking part of the footpath. People are avoiding that part of the street.,garbage,9.5,critical,market,2,0
+"Sharp-bend sign covered by posters in Tulsipur, motorcycles are braking suddenly.",road_damaged_sign,8.0,high,public,6,1
+The road has a deep hole that drivers need to avoid. It becomes harder to see when it rains.,pothole,2.0,low,market,5,2
+A pothole has appeared after the recent rain. The edge of the road is also starting to break.,pothole,9.5,critical,market,5,0
+A pothole is making vehicles move to the other side of the road. It has been there for a few days.,pothole,9.5,critical,residential,5,0
+Plastic bags and food waste are spread around the area. The area can be cleaned during the normal collection.,garbage,3.0,low,market,2,2
+"Public wall defaced with large drawings near a school, residents have requested cleaning.",vandalism,3.5,low,school,8,2
+"Parking restriction sign hanging from one bolt near a hospital, parked cars are blocking junction visibility.",road_damaged_sign,7.5,high,hospital,6,1
+The road has started breaking around the pothole. Drivers have to brake suddenly when they notice it.,pothole,7.0,high,market,5,1
+"Hospital direction sign missing from its pole near a school, ambulances are missing the correct access road.",road_damaged_sign,9.0,critical,school,6,0
+"Stop sign turned toward the wrong road on a residential road, drivers are taking wrong turns and causing traffic.",road_damaged_sign,7.0,high,residential,6,1
+There is a pile of household waste beside the road. The waste is creating a serious health and safety concern.,garbage,9.5,critical,hospital,2,0
+A pothole is getting larger after rain. The road surface around it is also damaged.,pothole,8.5,high,residential,5,1
+Food waste is scattered around because dogs are tearing the bags. People are having to walk around the garbage.,garbage,5.0,medium,market,2,3
+"Buses left near an industrial gate since yesterday, large vehicles have little turning space.",illegal_parking,6.0,medium,industrial,3,3
+"Loose litter is spreading around an overflowing bin and making the public area difficult to keep clean, near the school entrance.",trash,4.5,medium,school,7,3
+"Bridge-load sign painted over on a residential road, truck drivers cannot confirm the load limit.",road_damaged_sign,7.5,high,residential,6,1
+"Highway drain breeding mosquitoes, the area has an increased disease risk.",drainage,6.5,high,residential,1,1
+"School buses parked fully on the footpath since yesterday, pedestrians are forced onto the road.",illegal_parking,7.0,high,residential,3,1
+There is food waste on the street and stray dogs are spreading it. The smell is noticeable around the area.,garbage,2.0,low,residential,2,2
+"Storm-water drain filled with mud after rain, water is entering nearby shops.",drainage,7.5,high,market,1,1
+Food waste and plastic packaging are scattered around the neighborhood after garbage bags were damaged beside the school boundary.,domestic_trash,3.0,low,school,0,2
+"Health-post wall left with broken tiles near an industrial road, visitors cannot identify the correct entrance.",vandalism,6.0,medium,industrial,8,3
+"Animal-crossing sign knocked down in a public area, visitors cannot identify the crossing area.",road_damaged_sign,5.5,medium,public,6,3
+"School-zone sign bent away from traffic on a highway, pedestrians cannot find the crossing point.",road_damaged_sign,6.5,high,highway,6,1
+"Cargo vans parked across a school gate since yesterday, children are entering through traffic.",illegal_parking,8.5,high,school,3,1
+There is a pile of household waste beside the road. The collection vehicle has not come recently.,garbage,9.5,critical,hospital,2,0
+"Footpath drain blocked on the highway after recent rain, waterlogging is slowing heavy traffic.",drainage,7.5,high,highway,1,1
+"One-way sign faded and unreadable near a school, traffic slows while drivers confirm the route.",road_damaged_sign,4.5,medium,school,6,3
+Waste is blocking part of the footpath. There is no blockage around the waste.,garbage,2.5,low,school,2,2
+"Rental cars parked across a school gate in Pokhara after recent rain, children are entering through traffic.",illegal_parking,8.0,high,school,3,1
+The road has started breaking around the pothole. The damaged section is making traffic slower.,pothole,6.5,high,school,5,1
+"Private cars blocking a public bus stop since yesterday, buses are stopping in the traffic lane.",illegal_parking,7.0,high,commercial,3,1
+"Stop sign turned toward the wrong road on a residential road, traffic slows while drivers confirm the route.",road_damaged_sign,4.5,medium,residential,6,3
+A hole in the road is causing vehicles to shake while passing. It becomes harder to see when it rains.,pothole,5.5,medium,market,5,3
+"Public toilet left with its notice torn down in a public area, residents have requested cleaning.",vandalism,4.0,low,public,8,2
+The public bin is full and people are putting bags beside it. The pile is becoming noticeable on the street.,garbage,5.5,medium,residential,2,3
+"Pickup vehicles blocking a market loading area, deliveries and shoppers are delayed.",illegal_parking,6.5,high,market,3,1
+"भित्तामा अभद्र शब्दहरू विद्यालय मा लेखिएको छ, बच्चाहरूले देख्छन्। जिम्मेवार मानिस पत्ता लगाउनुपर्यो।",vandalism,7.9,critical,school,8,0
+"Bus shelter damaged with permanent marker near a market, the same place was damaged repeatedly.",vandalism,6.0,medium,market,8,3
+The garbage pickup has been irregular and waste is staying outside. Stray animals are spreading the waste around the street.,garbage,7.0,high,hospital,2,1
+"A large crack has developed across the concrete pavement, creating a serious trip hazard for pedestrians beside the hospital walkway.",infrastructure,3.0,low,hospital,4,2
+The roadside drain has collapsed and left a deep open gap beside the pedestrian route near nearby homes.,infrastructure,7.0,high,residential,4,1
+"Household trash bags are scattered across the residential street after being torn open by stray dogs, beside the highway access route.",domestic_trash,3.0,low,highway,0,2
+Mixed litter blocking the footpath at the public walkway.,trash,4.5,medium,public,7,3
+Loose manhole cover creating a hazard at the market street.,infrastructure,7.0,high,commercial,4,1
+Garbage is collecting near houses and the smell is getting worse. Dogs are opening the bags and spreading the waste.,garbage,6.5,high,market,2,1
+सार्वजनिक पर्खाल विद्यालय मा तोडफोड भएको छ। सरकारले चाँडै हेर्नुपर्यो।,vandalism,9.0,critical,school,8,0
+A broken curb has created a large gap that forces pedestrians to step closer to moving traffic near the main road junction.,infrastructure,6.5,medium,highway,4,3
+"Wet household rubbish is leaking onto the pavement and creating an unhygienic area near homes, along the highway shoulder.",domestic_trash,9.5,high,highway,0,1
+There is a bad smell coming from the garbage near the street. Dogs are opening the bags and spreading the waste.,garbage,9.0,critical,residential,2,0
+There is food waste on the street and stray dogs are spreading it. Stray animals are spreading the waste around the street.,garbage,8.5,high,residential,2,1
+"Motorcycles parked on both sides of a narrow road in Itahari after recent rain, emergency vehicles cannot pass.",illegal_parking,9.0,critical,hospital,3,0
+"Narrow-bridge sign hidden by branches near a market, drivers are approaching the hazard too quickly.",road_damaged_sign,7.5,high,market,6,1
+"Speed-limit sign hidden by branches in Itahari, vehicles are entering the work area too fast.",road_damaged_sign,9.0,critical,commercial,6,0
+A waste collection point is overflowing and loose rubbish is spreading into the nearby road beside the highway access route.,trash,3.5,low,highway,7,2
+The highway shoulder is badly damaged and contains loose concrete pieces that could affect traffic beside the public access route.,infrastructure,9.5,high,public,4,1
+Public bin overflowing onto the pavement at the community area.,trash,3.5,low,public,7,2
+नाला बजार मा प्लास्टिकले अवरुद्ध भएर पानी ओभरफ्लो भइरहेको छ। मानिसहरूलाई स्वास्थ्य खतरा भएको छ।,drainage,8.4,high,market,1,1
+सडक किनारमा फोहोरको थुप्रो लागेर आवासीय क्षेत्र बाट हिँड्न गाह्रो भएको छ। मानिसहरूलाई धेरै समस्या भएको छ।,trash,6.5,high,residential,7,1
+ढल औद्योगिक क्षेत्र मा अवरुद्ध भएर फोहोर पानी बाहिर बगिरहेको छ। सरकारले चाँडै हेर्नुपर्यो।,drainage,4.6,medium,industrial,1,3
+"Community drain filled with mud after rain since yesterday, water is entering nearby shops.",drainage,7.0,high,market,1,1
+"Covered drain leaking near a hospital after recent rain, dirty water is crossing the entrance.",drainage,8.5,high,hospital,1,1
+"Cross-road drain overflowing with sewage, residents face a serious health risk.",drainage,9.5,critical,residential,1,0
+People are throwing waste in the open area and the pile is getting bigger. It has been there for several days.,garbage,5.0,medium,market,2,3
+The pothole is making it uncomfortable for people riding motorcycles. Rainwater is collecting in the hole.,pothole,7.0,high,hospital,5,1
+"Pedestrian underpass left with official lettering blacked out on a residential road, residents have requested cleaning.",vandalism,4.0,low,residential,8,2
+The garbage pickup has been irregular and waste is staying outside. There are food leftovers mixed with plastic.,garbage,9.5,critical,residential,2,0
+The public bin is full and people are putting bags beside it. The waste is spreading after people pass by.,garbage,9.5,critical,school,2,0
+Cracked pavement creating a trip hazard at the highway shoulder.,infrastructure,5.0,medium,highway,4,3
+"Residential drain blocked on the highway after recent rain, waterlogging is slowing heavy traffic.",drainage,8.5,high,highway,1,1
+"Hospital direction sign missing from its pole near a school, patients are taking wrong turns.",road_damaged_sign,7.0,high,school,6,1
+"Trucks blocking a residential driveway, residents cannot move their vehicles.",illegal_parking,5.5,medium,residential,3,3
+"Construction vehicles blocking a residential driveway, residents cannot move their vehicles.",illegal_parking,4.5,medium,residential,3,3
+Loose domestic rubbish has been blown across the street and into the drainage area after strong wind near the main road junction.,domestic_trash,4.0,medium,highway,0,3
+A broken curb has created a large gap that forces pedestrians to step closer to moving traffic outside several houses.,infrastructure,8.0,high,residential,4,1
+"A damaged road surface has developed deep potholes that are difficult for vehicles to avoid, near the shopping area.",infrastructure,8.5,high,commercial,4,1
+"Motorcycles parked fully on the footpath after recent rain, pedestrians are forced onto the road.",illegal_parking,7.5,high,residential,3,1
+A hole in the road is causing vehicles to shake while passing. It is on a road used by many people.,pothole,2.5,low,market,5,2
+Rubbish piled up beside the walkway at the public walkway.,trash,8.0,high,public,7,1
+"Industrial drain overflowing near a school after recent rain, children are walking through dirty water.",drainage,8.5,high,school,1,1
+"Rubbish piled up beside the walkway, at the school entrance.",trash,5.0,medium,school,7,3
+"Minibuses left near an industrial gate, large vehicles have little turning space.",illegal_parking,6.5,high,industrial,3,1
+Food waste is scattered around because dogs are tearing the bags. The collection has been missed repeatedly and the pile is growing.,garbage,7.0,high,school,2,1
+"Private cars parked on both sides of a narrow road since yesterday, emergency vehicles cannot pass.",illegal_parking,9.5,critical,hospital,3,0
+Garbage bags are broken and the waste is spread across the sidewalk. There are food leftovers mixed with plastic.,garbage,2.0,low,school,2,2
+"Parking restriction sign painted over near a hospital, parked cars are blocking junction visibility.",road_damaged_sign,8.0,high,hospital,6,1
+"School-side drain overflowing near a school since yesterday, children are walking through dirty water.",drainage,8.0,high,school,1,1
+"School boundary wall covered with pasted flyers near an industrial road, children can see inappropriate language.",vandalism,6.0,medium,industrial,8,3
+Plastic bags and food waste are spread around the area. The waste is spreading around the nearby area.,garbage,5.5,medium,school,2,3
+"Several households have placed overflowing rubbish bags along the roadside, narrowing the pedestrian path, beside the highway access route.",domestic_trash,9.8,high,highway,0,1
+"One-way sign blocked by a vendor board in Janakpur, drivers are taking wrong turns and causing traffic.",road_damaged_sign,6.5,high,school,6,1
+"Wind has scattered plastic waste and paper across the area around an overflowing public bin, along the student walkway.",trash,6.0,medium,school,7,3
+व्यापारिक क्षेत्र को भित्तामा स्प्रे पेन्टले बिगारिएको छ। मानिसहरूलाई धेरै समस्या भएको छ।,vandalism,4.7,medium,commercial,8,3
+"Bus shelter covered with political slogans near a market, the same place was damaged repeatedly.",vandalism,5.5,medium,market,8,3
+"School buses left over a zebra crossing since yesterday, pedestrians are walking into traffic.",illegal_parking,7.5,high,public,3,1
+"Community hall left with its notice torn down in a commercial area, the markings are small but visible.",vandalism,3.0,low,commercial,8,2
+Garbage is lying on the street and people are walking around it. The smell is noticeable around the area.,garbage,8.5,high,school,2,1
+"Open drain giving off a strong smell, nearby residents cannot open windows.",drainage,6.0,medium,residential,1,3
+"Junction sign turned toward the wrong road near an industrial road, drivers are taking wrong turns and causing traffic.",road_damaged_sign,6.5,high,industrial,6,1
+"Buses parked on both sides of a narrow road, emergency vehicles cannot pass.",illegal_parking,9.0,critical,hospital,3,0
+"Rental cars blocking a residential driveway in Pokhara since yesterday, residents cannot move their vehicles.",illegal_parking,5.5,medium,residential,3,3
+"Parking restriction sign knocked down near a hospital, parked vehicles are narrowing the road.",road_damaged_sign,6.5,high,hospital,6,1
+There is a hole on the street that drivers are trying to avoid. It has been there for a few days.,pothole,9.0,critical,school,5,0
+"School-zone sign fallen into a drain on a highway, pedestrians cannot find the crossing point.",road_damaged_sign,7.5,high,highway,6,1
+"Public notice board covered with pasted flyers in a commercial area, emergency contact details are blocked.",vandalism,8.0,high,commercial,8,1
+"Deep pothole on the bridge, structural damage visible underneath, very dangerous for heavy vehicles",pothole,9.5,critical,residential,5,0
+Household waste has been left outside for several days. The waste is creating a serious problem for people using the area.,garbage,6.5,high,school,2,1
+Wet household rubbish is leaking onto the pavement and creating an unhygienic area near homes outside several houses.,domestic_trash,6.0,medium,residential,0,3
+"Plastic wrappers, cans, and food containers are scattered along the public walkway, along the hospital access road.",trash,6.0,medium,hospital,7,3
+"Footpath drain collapsed beside the road after recent rain, pedestrians could fall into the opening.",drainage,8.5,high,public,1,1
+"Cars parked fully on the footpath, pedestrians are forced onto the road.",illegal_parking,7.0,high,residential,3,1
+Discarded bottles and takeaway containers are blocking part of the pedestrian path along the student walkway.,trash,3.5,low,school,7,2
+The public bin is full and people are putting bags beside it. It has been there for several days.,garbage,7.0,high,market,2,1
+"Waste enclosure covered with pasted flyers near a market, the markings are small but visible.",vandalism,2.5,low,market,8,2
+People are leaving garbage beside the road instead of in the bin. It is mostly a small amount of dry waste.,garbage,3.0,low,hospital,2,2
+Plastic bags and food waste are spread around the area. The waste is creating a serious problem for people using the area.,garbage,8.0,high,school,2,1
+The road has started breaking around the pothole. People walking nearby have to be careful.,pothole,9.0,critical,market,5,0
+"Public bin overflowing onto the pavement, near the factory.",trash,8.0,high,industrial,7,1
+"Open drain covered by construction debris after recent rain, water cannot reach the outlet.",drainage,6.0,medium,industrial,1,3
+"Microbuses parked across a school gate, children are entering through traffic.",illegal_parking,8.0,high,school,3,1
+"Garbage bags containing food waste have been left open, attracting dogs and spreading rubbish across the street.",domestic_trash,7.5,high,industrial,0,1
+"Taxis parked along a highway shoulder since yesterday, fast traffic is swerving around them.",illegal_parking,8.5,high,highway,3,1
+There is a pothole where water collects after rain. Drivers have to brake suddenly when they notice it.,pothole,2.0,low,residential,5,2
+Several holes are visible on the road surface. It has been there for a few days.,pothole,2.5,low,residential,5,2
+ढल सार्वजनिक स्थान मा अवरुद्ध भएर फोहोर पानी बाहिर बगिरहेको छ। नाला सफा गर्नुपर्यो।,drainage,4.0,low,public,1,2
+"Public wall left with official lettering blacked out near a school, residents have requested cleaning.",vandalism,4.0,low,school,8,2
+बाटो साँघुरो भएर राजमार्ग मा ट्राफिक जाम भइरहेको छ पार्किङका कारण। ट्राफिक प्रहरीले हेर्नुपर्यो।,illegal_parking,7.4,high,highway,3,1
+घरायसी फोहोर ओभरफ्लो भएर राजमार्ग को फुटपाथसम्म पुगेको छ। छिटो फोहोर उठाइदिनुपर्यो।,domestic_trash,8.1,high,highway,0,1
+"Pedestrian underpass covered with spray-painted tags on a residential road, residents have requested cleaning.",vandalism,3.5,low,residential,8,2
+"Trucks parked fully on the footpath after recent rain, pedestrians are forced onto the road.",illegal_parking,7.0,high,residential,3,1
+Fohor le footpath ko bato pani chhekiyeko cha. Please collect it soon.,garbage,8.5,high,hospital,2,1
+There are potholes on the street and motorcycles are struggling to pass. Motorcycles are slowing down at that point.,pothole,8.5,high,hospital,5,1
+"Delivery vans left beside a no-parking sign in Butwal, traffic is moving slowly.",illegal_parking,5.5,medium,commercial,3,3
+"Junction sign hanging from one bolt near an industrial road, drivers are taking wrong turns and causing traffic.",road_damaged_sign,6.5,high,industrial,6,1
+"School-side drain collapsed beside the road since yesterday, pedestrians could fall into the opening.",drainage,8.0,high,public,1,1
+"Roadside drain covered by construction debris after recent rain, water cannot reach the outlet.",drainage,6.0,medium,industrial,1,3
+"Several types of litter have accumulated near the market entrance and are creating a sanitation concern, along the student walkway.",trash,9.5,high,school,7,1
+"Roadwork sign turned toward the wrong road on a highway, motorcycles are braking near the barriers.",road_damaged_sign,8.5,high,highway,6,1
+There is a pothole on the road and vehicles have to slow down. The damaged spot is limited to one small area.,pothole,2.0,low,school,5,2
+"Storm-water drain damaged near a commercial area, wastewater is spreading on the footpath.",drainage,6.5,high,commercial,1,1
+"Motorcycles parked on both sides of a narrow road since yesterday, emergency vehicles cannot pass.",illegal_parking,9.0,critical,hospital,3,0
+"Heritage rest house left with its notice torn down near a hospital, special cleaning is required.",vandalism,7.0,high,hospital,8,1
+There are several damaged spots and potholes along the street. Water collects inside the hole after rain.,pothole,9.0,critical,market,5,0
+"School-side drain blocked with plastic waste after recent rain, rainwater is flooding the road.",drainage,8.0,high,residential,1,1
+"Temple wall left with its notice torn down on a highway, the culturally important surface is damaged.",vandalism,8.5,high,highway,8,1
+Plastic bottles scattered near the road near the road junction.,trash,5.5,medium,highway,7,3
+"Garbage scattered on the street near the bus stop, dogs tearing the bags every morning, creating a mess",garbage,5.5,medium,residential,2,3
+"Pedestrian underpass damaged with permanent marker on a residential road, residents have requested cleaning.",vandalism,4.5,medium,residential,8,3
+People are leaving garbage beside the road instead of in the bin. It has been there for several days.,garbage,5.0,medium,hospital,2,3
+Plastic bags and food waste are spread around the area. It is mostly a small amount of dry waste.,garbage,2.5,low,market,2,2
+The road has started breaking around the pothole. It is causing vehicles to shake while crossing.,pothole,8.5,high,market,5,1
+"Community drain blocked with plastic waste, rainwater is flooding the road.",drainage,7.5,high,residential,1,1
+The garbage pickup has been irregular and waste is staying outside. Children are passing through the area every day.,garbage,5.0,medium,market,2,3
+Domestic waste is overflowing from a collection area and spreading into the nearby residential road outside several houses.,domestic_trash,4.5,medium,residential,0,3
+"Stop sign knocked down on a residential road, traffic slows while drivers confirm the route.",road_damaged_sign,3.5,low,residential,6,2
+Garbage bags torn open by dogs at the public road.,domestic_trash,7.5,high,public,0,1
+"Ward-office gate covered with political slogans near a hospital, visitors are using the wrong entrance.",vandalism,6.5,high,hospital,8,1
+प्लास्टिक र कागजको फोहोर बतासले उडेर आवासीय क्षेत्र तिर फैलिएको छ। मानिसहरूलाई धेरै समस्या भएको छ।,trash,5.9,high,residential,7,1
+"Deep potholes damaging the road surface, on the highway.",infrastructure,8.5,high,highway,4,1
+"सरकारी सम्पत्ति अस्पताल मा बिग्रेको छ, कसैले केही गरेन। छिटो सफा गर्नुपर्यो।",vandalism,8.6,critical,hospital,8,0
+"Ward-office gate marked with offensive words near a hospital, visitors are using the wrong entrance.",vandalism,6.5,high,hospital,8,1
+"The pedestrian crossing surface is cracked and uneven, creating a risk for people crossing the road, beside the hospital walkway.",infrastructure,3.0,low,hospital,4,2
+"Tourist vans left beside a no-parking sign in Hetauda, traffic is moving slowly.",illegal_parking,5.0,medium,commercial,3,3
+"Minibuses parked on both sides of a narrow road since yesterday, emergency vehicles cannot pass.",illegal_parking,9.5,critical,hospital,3,0
+"Trucks parked at a busy junction in Tulsipur, drivers cannot see approaching vehicles.",illegal_parking,8.5,high,market,3,1
+"Ward-office gate left with its notice torn down near a hospital, emergency contact details are blocked.",vandalism,7.0,high,hospital,8,1
+"Public toilet covered with pasted flyers in a public area, residents have requested cleaning.",vandalism,3.5,low,public,8,2
+A streetlight pole has been damaged and is leaning toward the pedestrian walkway near nearby homes.,infrastructure,3.5,low,residential,4,2
+A pothole is getting larger after rain. Motorcycles are slowing down when they reach it.,pothole,5.0,medium,hospital,5,3
+"School-zone sign painted over on a highway, children are crossing without warning.",road_damaged_sign,8.5,high,highway,6,1
+Plastic bags and disposable containers are scattered around the school boundary after the bin overflowed.,trash,6.0,medium,hospital,7,3
+"School buses left over a zebra crossing after recent rain, pedestrians are walking into traffic.",illegal_parking,7.5,high,public,3,1
+"Speed-limit sign hidden by branches in a commercial area, motorcycles are braking near the barriers.",road_damaged_sign,8.5,high,commercial,6,1
+The road needs repair because of a pothole. It is causing vehicles to shake while crossing.,pothole,9.0,critical,school,5,0
+A pothole is getting larger after rain. It is causing vehicles to shake while crossing.,pothole,9.0,critical,school,5,0
+"Bridge-load sign blocked by a vendor board on a residential road, truck drivers cannot confirm the load limit.",road_damaged_sign,7.0,high,residential,6,1
+"No-entry sign cracked with a loose edge in Lalitpur, traffic slows while drivers confirm the route.",road_damaged_sign,4.5,medium,hospital,6,3
+People are leaving garbage beside the road instead of in the bin. People are avoiding that part of the street.,garbage,8.0,high,market,2,1
+"Community hall left with broken tiles in a commercial area, residents have requested cleaning.",vandalism,4.0,low,commercial,8,2
+"Microbuses left over a zebra crossing after recent rain, pedestrians are walking into traffic.",illegal_parking,7.5,high,public,3,1
+"Domestic waste has been dumped beside the residential lane instead of being placed at the collection point, near nearby homes.",domestic_trash,5.5,medium,residential,0,3
+"Garbage bags containing food waste have been left open, attracting dogs and spreading rubbish across the street, near the community area.",domestic_trash,8.0,high,public,0,1
+नाला औद्योगिक क्षेत्र मा प्लास्टिकले अवरुद्ध भएर पानी ओभरफ्लो भइरहेको छ। नाला सफा गर्नुपर्यो।,drainage,4.6,medium,industrial,1,3
+Public waste has accumulated beside the entrance and is creating an unpleasant smell for visitors near the main road junction.,trash,8.5,high,highway,7,1
+"Market drain filled with mud after rain, water is entering nearby shops.",drainage,7.0,high,market,1,1
+Waste is collecting near the drain and blocking the water flow. The area becomes dirty after the waste is left outside.,garbage,9.5,critical,residential,2,0
+"Bato ma thulo khadal cha, gadi haru slow garnu parcha. Bato banaidina paryo.",pothole,2.5,low,school,5,2
+A pothole has appeared after the recent rain. It becomes harder to see when it rains.,pothole,2.0,low,market,5,2
+"Uncollected trash piling up outside homes, outside houses.",domestic_trash,5.0,medium,residential,0,3
+"Sharp-bend sign knocked down in a public area, motorcycles are braking suddenly.",road_damaged_sign,7.5,high,public,6,1
+A section of concrete near the hospital entrance has broken apart and is obstructing pedestrian access near the warehouse area.,infrastructure,7.5,high,industrial,4,1
+"A manhole cover is loose and uneven, creating a dangerous hazard for pedestrians and cyclists near nearby homes.",infrastructure,3.0,low,residential,4,2
+Waste is collecting near the drain and blocking the water flow. Rain is washing some of the waste onto the road.,garbage,7.0,high,market,2,1
+"Public toilet marked with offensive words in a public area, residents have requested cleaning.",vandalism,4.5,medium,public,8,3
+"School boundary wall left with broken tiles near an industrial road, damage is visible from the school gate.",vandalism,5.5,medium,industrial,8,3
+Household waste has been left outside for several days. The pile is spreading across the walking area.,garbage,8.5,high,residential,2,1
+Domestic rubbish has overflowed from bags and spread onto the pavement near nearby houses beside the school boundary.,domestic_trash,3.5,low,school,0,2
+The pothole is making it uncomfortable for people riding motorcycles. The damaged area is noticeable to regular road users.,pothole,5.0,medium,residential,5,3
+"Bus shelter left with official lettering blacked out near a market, residents have requested cleaning.",vandalism,3.5,low,market,8,2
+फोहोर उठाउने गाडी ढिलो आउँदा आवासीय क्षेत्र मा फोहोर जम्मा भइरहेको छ। छिटो फोहोर उठाइदिनुपर्यो।,trash,6.2,high,residential,7,1
+"Household rubbish blocking the pavement, near the road junction.",domestic_trash,6.5,medium,highway,0,3
+"School-zone sign cracked with a loose edge on a highway, pedestrians cannot find the crossing point.",road_damaged_sign,7.0,high,highway,6,1
+"Public toilet damaged with permanent marker in a public area, the markings are small but visible.",vandalism,2.5,low,public,8,2
+"A damaged retaining wall is showing visible cracks and appears unstable beside the access road, near the shopping area.",infrastructure,4.0,medium,commercial,4,3
+"Main sewer line covered by construction debris after recent rain, water cannot reach the outlet.",drainage,6.5,high,industrial,1,1
+फोहोरको बोरा च्यातिएर आवासीय क्षेत्र को बाटोभरि छरिएको छ। बाटो र क्षेत्र फोहोर भइरहेको छ।,trash,6.9,high,residential,7,1
+"Animal-crossing sign hidden by branches in a public area, visitors cannot identify the crossing area.",road_damaged_sign,4.5,medium,public,6,3
+Wind has scattered plastic waste and paper across the area around an overflowing public bin along the hospital access road.,trash,9.0,high,hospital,7,1
+"Culvert collapsed beside the road, pedestrians could fall into the opening.",drainage,8.5,high,public,1,1
+"Narrow-bridge sign knocked down near a market, motorcycles are braking suddenly.",road_damaged_sign,7.5,high,market,6,1
+There is a bad smell coming from the garbage near the street. Rain is washing some of the waste onto the road.,garbage,5.5,medium,school,2,3
+There are several damaged spots and potholes along the street. It has been there for a few days.,pothole,2.5,low,hospital,5,2
+Rubbish piled up beside the walkway near the factory.,trash,4.5,medium,industrial,7,3
+"A streetlight pole has been damaged and is leaning toward the pedestrian walkway, outside several houses.",infrastructure,4.0,medium,residential,4,3
+"Buses left beside a no-parking sign in Bharatpur after recent rain, traffic is moving slowly.",illegal_parking,6.0,medium,commercial,3,3
+म्यानहोलको ढक्कन फुटेर बजार को बाटोमा ठूलो खाल्डो भएको छ। छिटो मर्मत गर्नुपर्यो।,infrastructure,7.6,high,market,4,1
+"Roadwork sign bent away from traffic on a highway, drivers cannot confirm the speed restriction.",road_damaged_sign,6.5,high,highway,6,1
+"फोहोर मैला संकलन नभएको धेरै दिन भयो, अस्पताल मा फोहोरको थुप्रो जम्मा भएको छ। मानिसहरूलाई धेरै समस्या भएको छ।",trash,8.7,critical,hospital,7,0
+"Market drain overflowing near a school since yesterday, children are walking through dirty water.",drainage,7.5,high,school,1,1
+"Public notice board marked with offensive words in a commercial area, part of the public notice cannot be read.",vandalism,6.0,medium,commercial,8,3
+"Roadside drain collapsed beside the road, pedestrians could fall into the opening.",drainage,9.0,critical,public,1,0
+"Footbridge railing damaged with permanent marker on a residential road, the damage may worsen without repair.",vandalism,4.5,medium,residential,8,3
+"Footbridge railing scraped across the surface on a residential road, sharp parts are exposed beside pedestrians.",vandalism,8.5,high,residential,8,1
+"A large crack has developed across the concrete pavement, creating a serious trip hazard for pedestrians near the hospital entrance.",infrastructure,9.5,high,hospital,4,1
+"Bus shelter scraped across the surface near a market, the markings are small but visible.",vandalism,3.0,low,market,8,2
+Garbage bags torn open by dogs on the residential lane.,domestic_trash,9.0,high,residential,0,1
+"Household waste has been left beside the road for several days and is attracting insects and stray animals, along the neighborhood road.",domestic_trash,4.5,medium,residential,0,3
+"Community drain leaking near a hospital, dirty water is crossing the entrance.",drainage,9.0,critical,hospital,1,0
+Discarded food packaging is covering part of the pavement near the shopping area along the highway shoulder.,trash,7.0,high,highway,7,1
+"Mixed rubbish has accumulated around the waste collection point near the busy commercial area, near nearby homes.",trash,5.0,medium,residential,7,3
+"Delivery vans blocking a public bus stop, buses are stopping in the traffic lane.",illegal_parking,7.5,high,commercial,3,1
+"Landslide warning sign painted over near a market, night drivers cannot see the hazard.",road_damaged_sign,8.5,high,market,6,1
+"Public gutter partly blocked by leaves since yesterday, water drains slowly during rain.",drainage,4.5,medium,public,1,3
+"Junction sign knocked down near an industrial road, drivers are taking wrong turns and causing traffic.",road_damaged_sign,7.0,high,industrial,6,1
+"Bus-stop sign turned toward the wrong road in a commercial area, people cannot identify the correct bus stop.",road_damaged_sign,5.0,medium,commercial,6,3
+A damaged road surface has developed deep potholes that are difficult for vehicles to avoid along the neighborhood road.,infrastructure,6.0,medium,residential,4,3
+People are leaving garbage beside the road instead of in the bin. The waste is close to the walking path.,garbage,5.5,medium,school,2,3
+"A section of concrete near the hospital entrance has broken apart and is obstructing pedestrian access, along the industrial access road.",infrastructure,6.0,medium,industrial,4,3
+Discarded food packaging is covering part of the pavement near the shopping area outside several houses.,trash,5.5,medium,residential,7,3
+The garbage container is overflowing and waste is on the road. Some bags have been torn open.,garbage,9.0,critical,school,2,0
+There are many empty bottles and plastic bags lying around. Residents are asking for the waste to be picked up.,garbage,7.0,high,school,2,1
+Domestic rubbish has overflowed from bags and spread onto the pavement near nearby houses.,domestic_trash,6.5,medium,highway,0,3
+"सरकारी सम्पत्ति आवासीय क्षेत्र मा बिग्रेको छ, कसैले केही गरेन। मानिसहरूलाई धेरै समस्या भएको छ।",vandalism,7.1,high,residential,8,1
+"Bridge-load sign knocked down in Hetauda, truck drivers cannot confirm the load limit.",road_damaged_sign,7.5,high,residential,6,1
+"Garbage bags containing food waste have been left open, attracting dogs and spreading rubbish across the street, beside the highway access route.",domestic_trash,2.5,low,highway,0,2
+Public waste has accumulated beside the entrance and is creating an unpleasant smell for visitors along the commercial street.,trash,9.5,high,commercial,7,1
+"Bato ma dherai pothole chan, repair garnu paryo. Bato banaidina paryo.",pothole,9.0,critical,market,5,0
+There is a pothole on the road and vehicles have to slow down. People walking nearby have to be careful.,pothole,9.5,critical,hospital,5,0
+A pothole is getting larger after rain. It is not affecting the normal movement of vehicles.,pothole,3.0,low,residential,5,2
+"Private cars blocking a hospital entrance in Ghorahi since yesterday, ambulances are delayed.",illegal_parking,9.5,critical,hospital,3,0
+"Private cars parked fully on the footpath after recent rain, pedestrians are forced onto the road.",illegal_parking,8.0,high,residential,3,1
+People are throwing waste in the open area and the pile is getting bigger. The garbage is blocking access through the area.,garbage,9.5,critical,residential,2,0
+"No-entry sign faded and unreadable near a hospital, traffic slows while drivers confirm the route.",road_damaged_sign,4.5,medium,hospital,6,3
+"Footpath drain blocked on the highway, waterlogging is slowing heavy traffic.",drainage,7.5,high,highway,1,1
+Mixed litter blocking the footpath at the hospital.,trash,6.5,medium,hospital,7,3
+There is a pile of household waste beside the road. The waste is visible from the nearby road.,garbage,3.5,low,school,2,2
+फोहोर उठाउने गाडी ढिलो आउँदा सार्वजनिक स्थान मा फोहोर जम्मा भइरहेको छ। यस्तो फोहोर सफा गर्नुपर्यो।,trash,5.3,low,public,7,2
+Domestic waste has been dumped beside the residential lane instead of being placed at the collection point near nearby homes.,domestic_trash,3.0,low,residential,0,2
+"Covered drain collapsed beside the road, pedestrians could fall into the opening.",drainage,8.5,high,public,1,1
+"Culvert overflowing with sewage, residents face a serious health risk.",drainage,9.0,critical,residential,1,0
+"Rental cars blocking a public bus stop since yesterday, buses are stopping in the traffic lane.",illegal_parking,7.5,high,commercial,3,1
+Plastic bags and disposable containers are scattered around the school boundary after the bin overflowed near the shopping area.,trash,5.5,medium,commercial,7,3
+"Taxis parked along a highway shoulder, fast traffic is swerving around them.",illegal_parking,8.5,high,highway,3,1
+There is a hole near the edge of the road where motorcycles pass. It has been there for a few days.,pothole,3.0,low,hospital,5,2
+"Rental cars left beside a no-parking sign after recent rain, traffic is moving slowly.",illegal_parking,5.5,medium,commercial,3,3
+"Open drain overflowing near a school, children are walking through dirty water.",drainage,7.5,high,school,1,1
+Trash bags scattered on the street near the road junction.,domestic_trash,4.5,medium,highway,0,3
+"Roadside drain giving off a strong smell, nearby residents cannot open windows.",drainage,6.0,medium,residential,1,3
+"Temple wall defaced with large drawings on a highway, visitors have complained about disrespect.",vandalism,7.5,high,highway,8,1
+"Parking restriction sign faded and unreadable in Dharan, drivers cannot identify the restricted section.",road_damaged_sign,5.0,medium,hospital,6,3
+Broken barrier blocking part of the road near the school.,infrastructure,3.5,low,school,4,2
+"School boundary wall covered with illegal advertising near an industrial road, the school safety notice is unreadable.",vandalism,7.5,high,industrial,8,1
+"Construction vehicles parked at a busy junction, drivers cannot see approaching vehicles.",illegal_parking,9.0,critical,market,3,0
+The road has a large uneven section caused by a pothole. It is difficult to see at night.,pothole,2.5,low,school,5,2
+"Roadside drain overflowing with sewage, residents face a serious health risk.",drainage,9.5,critical,residential,1,0
+"Collapsed drain leaving an open gap, near the road junction.",infrastructure,5.0,medium,highway,4,3
+"Public gutter overflowing near a school, children are walking through dirty water.",drainage,7.5,high,school,1,1
+"An overflowing public bin has caused plastic bottles and food containers to spill onto the pavement, near the warehouse area.",trash,3.5,low,industrial,7,2
+"Public wall left with its notice torn down near a school, the same place was damaged repeatedly.",vandalism,5.5,medium,school,8,3
+गाडीहरू व्यापारिक क्षेत्र को दुबै साइडमा गैरकानूनी पार्किङ गरेका छन्। चाँडै कारबाही लिनुपर्यो।,illegal_parking,5.0,medium,commercial,3,3
+Waste is blocking part of the footpath. The area becomes dirty after the waste is left outside.,garbage,9.5,critical,school,2,0
+"No-entry sign turned toward the wrong road near a hospital, traffic slows while drivers confirm the route.",road_damaged_sign,4.0,low,hospital,6,2
+"Covered drain overflowing with sewage after recent rain, residents face a serious health risk.",drainage,9.0,critical,residential,1,0
+"Trucks parked across a school gate, children are entering through traffic.",illegal_parking,8.0,high,school,3,1
+A damaged road surface has developed deep potholes that are difficult for vehicles to avoid along the student walkway.,infrastructure,3.5,low,school,4,2
+The garbage pickup has been irregular and waste is staying outside. The waste is spreading after people pass by.,garbage,7.5,high,market,2,1
+A pothole is making the road difficult to use at night. Motorcycles are slowing down at that point.,pothole,5.0,medium,school,5,3
+Garbage is piling up near the footpath and making it difficult to pass. The waste has been left there for several days.,garbage,5.5,medium,residential,2,3
+"School-zone sign faded and unreadable on a highway, children are crossing without warning.",road_damaged_sign,8.5,high,highway,6,1
+"Culvert overflowing near a school since yesterday, children are walking through dirty water.",drainage,8.5,high,school,1,1
+"Household waste left outside homes, near shops.",domestic_trash,9.5,high,commercial,0,1
+"Domestic rubbish has overflowed from bags and spread onto the pavement near nearby houses, beside the public access route.",domestic_trash,6.5,medium,public,0,3
+ढल लाइन बजार मा फुटेर दुर्गन्ध आइरहेको छ। सरकारले चाँडै हेर्नुपर्यो।,drainage,7.1,high,market,1,1
+"Landslide warning sign hidden by branches near a market, motorcycles are braking suddenly.",road_damaged_sign,8.5,high,market,6,1
+A pothole is causing buses and cars to slow down. It is causing vehicles to shake while crossing.,pothole,6.5,high,school,5,1
+"Covered drain blocked with plastic waste after recent rain, rainwater is flooding the road.",drainage,8.5,high,residential,1,1
+Plastic bags and food waste are spread around the area. The waste is spreading after people pass by.,garbage,3.5,low,market,2,2
+"Culvert blocked on the highway after recent rain, waterlogging is slowing heavy traffic.",drainage,7.5,high,highway,1,1
+Domestic waste is overflowing from a collection area and spreading into the nearby residential road near the main road junction.,domestic_trash,7.5,high,highway,0,1
+"Public gutter overflowing near a school after recent rain, children are walking through dirty water.",drainage,7.5,high,school,1,1
+"Pedestrian-crossing sign hidden by branches near an industrial road, vehicles are braking when people enter the road.",road_damaged_sign,7.5,high,industrial,6,1
+Loose paving blocks near the entrance at the market street.,infrastructure,3.0,low,commercial,4,2
+The road surface is broken and there is a pothole in the middle. Cars are moving around it to avoid the hole.,pothole,5.0,medium,market,5,3
+Discarded household waste is scattered around the neighborhood and creating a visible sanitation problem near the main road junction.,domestic_trash,5.0,medium,highway,0,3
+"Minibuses left beside a no-parking sign after recent rain, traffic is moving slowly.",illegal_parking,5.0,medium,commercial,3,3
+There are several damaged spots and potholes along the street. Buses are slowing down near the damaged section.,pothole,5.0,medium,hospital,5,3
+"Discarded food packaging is covering part of the pavement near the shopping area, near the shopping area.",trash,8.5,high,commercial,7,1
+The garbage container is overflowing and waste is on the road. Residents are asking for the waste to be picked up.,garbage,5.5,medium,residential,2,3
+The road surface is broken and there is a pothole in the middle. It is causing vehicles to shake while crossing.,pothole,3.0,low,residential,5,2
+"Tourist vans blocking a hospital entrance since yesterday, ambulances are delayed.",illegal_parking,9.5,critical,hospital,3,0
+"Covered drain giving off a strong smell, nearby residents cannot open windows.",drainage,5.5,medium,residential,1,3
+There is rubbish around the road and it needs cleaning. Residents are asking for the waste to be picked up.,garbage,2.0,low,school,2,2
+"Bus shelter covered with spray-painted tags near a market, the markings are small but visible.",vandalism,3.5,low,market,8,2
+"Waste enclosure left with official lettering blacked out near a market, residents have requested cleaning.",vandalism,4.5,medium,market,8,3
+"Sharp-bend sign knocked down in a public area, night drivers cannot see the hazard.",road_damaged_sign,8.0,high,public,6,1
+"Culvert collapsed beside the road after recent rain, pedestrians could fall into the opening.",drainage,8.5,high,public,1,1
+"Industrial drain blocked on the highway after recent rain, waterlogging is slowing heavy traffic.",drainage,7.5,high,highway,1,1
+"School buses left beside a no-parking sign, traffic is moving slowly.",illegal_parking,5.5,medium,commercial,3,3
+"Public water tap left with its notice torn down in a public area, the damage may worsen without repair.",vandalism,4.0,low,public,8,2
+Plastic bags and disposable containers are scattered around the school boundary after the bin overflowed near the community area.,trash,9.5,high,public,7,1
+"Hospital access drain covered by construction debris since yesterday, water cannot reach the outlet.",drainage,5.5,medium,industrial,1,3
+"Discarded bottles and takeaway containers are blocking part of the pedestrian path, beside the hospital walkway.",trash,4.0,medium,hospital,7,3
+"Stop sign fallen into a drain in Kathmandu, vehicles are entering from conflicting directions.",road_damaged_sign,9.0,critical,residential,6,0
+"Main sewer line collapsed beside the road since yesterday, pedestrians could fall into the opening.",drainage,8.0,high,public,1,1
+"Park signboard badly scratched near a school, emergency contact details are blocked.",vandalism,7.5,high,school,8,1
+"Temple wall covered with pasted flyers on a highway, the culturally important surface is damaged.",vandalism,8.0,high,highway,8,1
+A section of concrete near the hospital entrance has broken apart and is obstructing pedestrian access beside the factory service route.,infrastructure,8.5,high,industrial,4,1
+"School buses blocking a hospital entrance in Biratnagar after recent rain, ambulances are delayed.",illegal_parking,9.5,critical,hospital,3,0
+"Waste enclosure defaced with large drawings near a market, the markings are small but visible.",vandalism,3.0,low,market,8,2
+"Rubbish piled up beside the walkway, beside the hospital.",trash,7.5,high,hospital,7,1
+The pothole is filled with rainwater and its depth is hard to see. The edge of the road is also starting to break.,pothole,9.5,critical,hospital,5,0
+"Household waste left outside homes, on the highway.",domestic_trash,9.5,high,highway,0,1
+"Industrial drain collapsed beside the road since yesterday, pedestrians could fall into the opening.",drainage,8.5,high,public,1,1
+"Pedestrian underpass left with its notice torn down on a residential road, the markings are small but visible.",vandalism,2.5,low,residential,8,2
+"Hospital direction sign bent away from traffic near a school, visitors need help finding the entrance.",road_damaged_sign,3.5,low,school,6,2
+"Hospital direction sign cracked with a loose edge near a school, patients are taking wrong turns.",road_damaged_sign,6.5,high,school,6,1
+"Bridge-load sign hanging from one bolt on a residential road, heavy vehicles may enter an unsafe bridge.",road_damaged_sign,9.5,critical,residential,6,0
+"Waste enclosure left with official lettering blacked out near a market, the markings are small but visible.",vandalism,3.5,low,market,8,2
+"Buses parked along a highway shoulder, fast traffic is swerving around them.",illegal_parking,8.0,high,highway,3,1
+"Culvert damaged near a commercial area since yesterday, wastewater is spreading on the footpath.",drainage,7.0,high,commercial,1,1
+There are several damaged spots and potholes along the street. The edge of the road is also starting to break.,pothole,5.0,medium,market,5,3
+There is waste scattered near the roadside and it needs to be collected. Dogs are opening the bags and spreading the waste.,garbage,9.0,critical,market,2,0
+There is a hole on the street that drivers are trying to avoid. People are asking for the road to be repaired.,pothole,8.5,high,hospital,5,1
+There is a pothole on the road and vehicles have to slow down. Motorcycles are slowing down at that point.,pothole,5.5,medium,school,5,3
+"Main sewer line damaged near a commercial area, wastewater is spreading on the footpath.",drainage,6.5,high,commercial,1,1
+"Plastic wrappers, cans, and food containers are scattered along the public walkway near the warehouse area.",trash,9.5,high,industrial,7,1
+"Broken barrier blocking part of the road, near the hospital.",infrastructure,9.0,high,hospital,4,1
+बाटोको किनारा धेरै ठाउँबाट खस्केर आवासीय क्षेत्र मा खतरा भएको छ। मानिसहरूलाई धेरै खतरा भएको छ।,infrastructure,7.3,high,residential,4,1
+"Heritage rest house left with broken tiles near a hospital, visitors have complained about disrespect.",vandalism,7.5,high,hospital,8,1
+"Community hall left with official lettering blacked out in a commercial area, residents have requested cleaning.",vandalism,4.5,medium,commercial,8,3
+"Park signboard left with its notice torn down near a school, visitors are using the wrong entrance.",vandalism,7.0,high,school,8,1
+"No-entry sign hidden by branches near a hospital, drivers are taking wrong turns and causing traffic.",road_damaged_sign,6.0,medium,hospital,6,3
+"Wet household rubbish is leaking onto the pavement and creating an unhygienic area near homes, outside several houses.",domestic_trash,5.0,medium,residential,0,3
+"Several paving blocks are loose and uneven near the school entrance, making the walkway unsafe, near the school entrance.",infrastructure,7.5,high,school,4,1
+"Public gutter filled with mud after rain since yesterday, water is entering nearby shops.",drainage,7.0,high,market,1,1
+"Ward-office gate scraped across the surface near a hospital, part of the public notice cannot be read.",vandalism,6.5,high,hospital,8,1
+"Highway drain breeding mosquitoes since yesterday, the area has an increased disease risk.",drainage,6.5,high,residential,1,1
+The public bin is full and people are putting bags beside it. People are having to walk around the garbage.,garbage,5.5,medium,hospital,2,3
+Household trash bags are scattered across the residential street after being torn open by stray dogs along the industrial access road.,domestic_trash,8.5,high,industrial,0,1
+Cracked pavement creating a trip hazard near the hospital.,infrastructure,7.5,high,hospital,4,1
+Garbage bags torn open by dogs at the highway shoulder.,domestic_trash,7.0,high,highway,0,1
+"Hospital direction sign knocked down near a school, patients are taking wrong turns.",road_damaged_sign,6.5,high,school,6,1
+"Buses blocking a residential driveway since yesterday, residents cannot move their vehicles.",illegal_parking,4.5,medium,residential,3,3
+"Pedestrian-crossing sign fallen into a drain near an industrial road, children are crossing without warning.",road_damaged_sign,8.5,high,industrial,6,1
+"Trash bags scattered on the street, beside the school.",domestic_trash,2.5,low,school,0,2
+"Public water tap marked with offensive words in a public area, the damage may worsen without repair.",vandalism,4.5,medium,public,8,3
+There is a bad smell coming from the garbage near the street. The garbage is increasing day by day.,garbage,8.5,high,school,2,1
+There is a pile of household waste beside the road. Children are passing through the area every day.,garbage,8.5,high,market,2,1
+Rubbish has been dumped near the hospital access road and is obstructing part of the walkway along the neighborhood road.,trash,4.0,medium,residential,7,3
+Household waste left outside homes at homes.,domestic_trash,2.5,low,residential,0,2
+घरको फोहोरको बोरा विद्यालय को बाटोमा छरिएको छ। छिटो फोहोर उठाइदिनुपर्यो।,domestic_trash,8.0,critical,school,0,0
+"Minibuses parked fully on the footpath, pedestrians are forced onto the road.",illegal_parking,8.0,high,residential,3,1
+Uncollected trash piling up outside homes near the hospital.,domestic_trash,3.0,low,hospital,0,2
+The roadside drain has collapsed and left a deep open gap beside the pedestrian route along the student walkway.,infrastructure,2.5,low,school,4,2
+"Construction vehicles parked at a busy junction after recent rain, drivers cannot see approaching vehicles.",illegal_parking,9.0,critical,market,3,0
+Garbage is piling up near the footpath and making it difficult to pass. It has been there for several days.,garbage,7.5,high,market,2,1
+"Several paving blocks are loose and uneven near the school entrance, making the walkway unsafe, near the shopping area.",infrastructure,5.5,medium,commercial,4,3
+"Industrial drain giving off a strong smell since yesterday, nearby residents cannot open windows.",drainage,5.5,medium,residential,1,3
+"स्टप साइन विद्यालय को चोकमा ढलेको छ, गाडीहरू रोकिँदैनन्। छिटो मर्मत गर्नुपर्यो।",road_damaged_sign,7.9,critical,school,6,0
+"Open drain filled with mud after rain after recent rain, water is entering nearby shops.",drainage,7.0,high,market,1,1
+Pani parepachi khadal ajhai thulo bhako cha. Yaha bata hidna garo bhako cha.,pothole,6.5,high,residential,5,1
+Bato bigreko cha ra pothole ma pani jamcha. Bato banaidina paryo.,pothole,7.0,high,hospital,5,1
+"Speed-limit sign bent away from traffic in Itahari, motorcycles are braking near the barriers.",road_damaged_sign,7.5,high,commercial,6,1
+Broken barrier blocking part of the road at the public walkway.,infrastructure,6.0,medium,public,4,3
+"Health-post wall left with broken tiles near an industrial road, patients cannot read the service details.",vandalism,5.5,medium,industrial,8,3
+"Culvert partly blocked by leaves, water drains slowly during rain.",drainage,4.0,low,public,1,2
+"Minibuses blocking a hospital entrance, ambulances are delayed.",illegal_parking,9.5,critical,hospital,3,0
+Waste is blocking part of the footpath. There are food leftovers mixed with plastic.,garbage,7.5,high,hospital,2,1
+"Tourist vans blocking a market loading area, deliveries and shoppers are delayed.",illegal_parking,5.5,medium,market,3,3
+"Temple wall covered with political slogans on a highway, the culturally important surface is damaged.",vandalism,7.5,high,highway,8,1
+"Garbage bags containing food waste have been left open, attracting dogs and spreading rubbish across the street, along the neighborhood road.",domestic_trash,8.0,high,residential,0,1
+"Bridge-load sign bent away from traffic on a residential road, drivers are stopping to check the restriction.",road_damaged_sign,5.0,medium,residential,6,3
+"A large pile of rubbish has been left beside the roadside near a frequently used pedestrian route, near the school entrance.",trash,9.0,high,school,7,1
+"Public wall covered with illegal advertising near a school, residents have requested cleaning.",vandalism,4.0,low,school,8,2
+Public bin overflowing onto the pavement on the residential lane.,trash,4.5,medium,residential,7,3
+"Narrow-bridge sign blocked by a vendor board near a market, night drivers cannot see the hazard.",road_damaged_sign,9.0,critical,market,6,0
+"Parking restriction sign missing from its pole near a hospital, drivers cannot identify the restricted section.",road_damaged_sign,5.5,medium,hospital,6,3
+Rubbish piled up beside the walkway at the highway.,trash,3.0,low,highway,7,2
+"Bus-stop sign turned toward the wrong road in a commercial area, buses are stopping in the traffic lane.",road_damaged_sign,7.5,high,commercial,6,1
+"Landslide warning sign turned toward the wrong road near a market, night drivers cannot see the hazard.",road_damaged_sign,8.0,high,market,6,1
+"Private cars parked on both sides of a narrow road in Ghorahi after recent rain, emergency vehicles cannot pass.",illegal_parking,9.5,critical,hospital,3,0

@@ -1,6 +1,7 @@
 # Large Datasets
 CivicIssuesImageDataset/
 text_dataset/
+muril_complaint_classifier/
 
 
 # Pycache

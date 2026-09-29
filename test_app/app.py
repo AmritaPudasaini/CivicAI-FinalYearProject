@@ -1,5 +1,6 @@
 import streamlit as st
 import torch
+from pathlib import Path
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 # ---------------------------------------------------
@@ -7,7 +8,9 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 # ---------------------------------------------------
 @st.cache_resource
 def load_model():
-    model_path = "../muril_complaint_classifier_final"  # model folder is one level up
+    # Resolve path relative to this script's location, not the working directory,
+    # so it works regardless of where `streamlit run` is launched from.
+    model_path = Path(__file__).parent.parent / "muril_complaint_classifier_final"
     tokenizer = AutoTokenizer.from_pretrained(model_path)
     model = AutoModelForSequenceClassification.from_pretrained(model_path)
     model.eval()

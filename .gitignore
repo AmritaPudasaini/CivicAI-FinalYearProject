@@ -3,6 +3,8 @@ CivicIssuesImageDataset/
 text_dataset/
 muril_Complaint_classifier/
 muril_complaint_classifier_final/
+best_efficient_b0.pth/
+efficientnet_b0_civic_final.pth/
 
 
 # Pycache

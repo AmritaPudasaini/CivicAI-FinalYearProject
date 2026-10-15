@@ -14,8 +14,8 @@ from PIL import Image
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, ".."))
 
-TEXT_MODEL_PATH = os.path.join(PROJECT_ROOT, "muril_complaint_classifier_final")
-IMAGE_MODEL_PATH = os.path.join(PROJECT_ROOT, "efficientnet_b0_civic_final.pth")
+TEXT_MODEL_PATH = os.path.join(PROJECT_ROOT, "models", "muril_category_final")
+IMAGE_MODEL_PATH = os.path.join(PROJECT_ROOT, "models", "efficientnet_b0_civic_final.pth")
 
 # Stop early with a clear message instead of a confusing Hugging Face error
 if not os.path.isdir(TEXT_MODEL_PATH):

@@ -12,7 +12,7 @@ from PIL import Image
 # ---------------------------------------------------
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, ".."))
-IMAGE_MODEL_PATH = os.path.join(PROJECT_ROOT, "efficientnet_b0_civic_final.pth")
+IMAGE_MODEL_PATH = os.path.join(PROJECT_ROOT, "models", "efficientnet_b0_civic_final.pth")
 
 if not os.path.isfile(IMAGE_MODEL_PATH):
     st.error(f"Image model file not found:\n{IMAGE_MODEL_PATH}")

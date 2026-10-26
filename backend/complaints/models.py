@@ -1,5 +1,13 @@
+import secrets
+
 from django.db import models
 from django.utils import timezone
+
+_CODE_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"   # no 0/O/1/I, to avoid mix-ups when read aloud
+
+
+def generate_tracking_code():
+    return "CV-" + "".join(secrets.choice(_CODE_ALPHABET) for _ in range(8))
 
 
 class Complaint(models.Model):
@@ -9,6 +17,7 @@ class Complaint(models.Model):
         RESOLVED = "resolved", "Resolved"
 
     # What the citizen submitted
+    tracking_code = models.CharField(max_length=16, blank=True, db_index=True, editable=False)
     description = models.TextField(blank=True)
     image = models.ImageField(upload_to="complaints/%Y/%m/", null=True, blank=True)
     lat = models.FloatField(null=True, blank=True)
@@ -38,6 +47,16 @@ class Complaint(models.Model):
 
     class Meta:
         ordering = ["-priority_score", "-created_at"]
+
+    def save(self, *args, **kwargs):
+        if not self.tracking_code:
+            code = generate_tracking_code()
+            while Complaint.objects.filter(tracking_code=code).exists():
+                code = generate_tracking_code()
+            self.tracking_code = code
+            if kwargs.get("update_fields") is not None:        # make sure the new code is written too
+                kwargs["update_fields"] = list(kwargs["update_fields"]) + ["tracking_code"]
+        super().save(*args, **kwargs)
 
     def __str__(self):
         return f"#{self.pk} {self.department} ({self.priority_level})"

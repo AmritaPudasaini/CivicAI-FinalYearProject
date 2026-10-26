@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
+    "rest_framework.authtoken",
     "corsheaders",
     "complaints",
 ]
@@ -143,3 +144,22 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
+
+# ---------------- REST framework ----------------
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework.authentication.TokenAuthentication",
+        "rest_framework.authentication.SessionAuthentication",   # lets you browse the API after logging in to /admin/
+    ],
+    # Every endpoint is staff-only unless a view explicitly opens it up
+    "DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.IsAdminUser"],
+    "DEFAULT_THROTTLE_RATES": {
+        "submissions": "1000/hour" if DEBUG else "20/hour",
+        "tracking": "1000/hour" if DEBUG else "60/hour",
+        "login": "1000/hour" if DEBUG else "10/minute",
+    },
+}
+
+# ---------------- Complaint photo limits ----------------
+MAX_UPLOAD_MB = 5
+ALLOWED_IMAGE_TYPES = ("image/jpeg", "image/png", "image/webp")

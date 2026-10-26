@@ -123,6 +123,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",   # React
     "http://localhost:5173",   # Vite
     "http://localhost:8501",   # Streamlit
+    "http://localhost:5174",   # Another frontend
 ]
 
 USE_I18N = True

@@ -1,8 +1,11 @@
 """
 Smoke test for the complaints API, using the real models.
 
-1. Start the server in one terminal:   cd backend && python manage.py runserver --noreload
-2. Run this in another terminal:       python scripts/api_smoke_test.py
+1. Start the server:  cd backend && python manage.py runserver 8001 --noreload
+2. Run this from the project root with a STAFF account (the one you made with createsuperuser):
+
+   env API_URL=http://127.0.0.1:8001/api API_USER=yourname API_PASSWORD=yourpassword \
+       python scripts/api_smoke_test.py
 """
 import glob
 import os
@@ -19,7 +22,19 @@ ROADS = "Roads Department"
 WASTE = "Solid Waste Management"
 DRAINAGE = "Drainage & Sewerage"
 
+HEADERS = {}
 timings = []
+
+
+def login():
+    user, password = os.environ.get("API_USER"), os.environ.get("API_PASSWORD")
+    if not user or not password:
+        raise SystemExit("Set API_USER and API_PASSWORD to a staff account, for example:\n"
+                         "  env API_USER=yourname API_PASSWORD=yourpassword python scripts/api_smoke_test.py")
+    r = requests.post(f"{BASE}/auth/login/", json={"username": user, "password": password}, timeout=30)
+    if r.status_code != 200:
+        raise SystemExit(f"Login failed ({r.status_code}): {r.text[:200]}")
+    HEADERS["Authorization"] = f"Token {r.json()['token']}"
 
 
 def photo(image_class):
@@ -43,9 +58,10 @@ def submit(label, description=None, image_class=None, lat=27.7172, lon=85.3240,
     start = time.time()
     if path:
         with open(path, "rb") as fh:
-            resp = requests.post(f"{BASE}/complaints/", data=data, files={"image": fh}, timeout=300)
+            resp = requests.post(f"{BASE}/complaints/", data=data, files={"image": fh},
+                                 headers=HEADERS, timeout=300)
     else:
-        resp = requests.post(f"{BASE}/complaints/", data=data, timeout=300)
+        resp = requests.post(f"{BASE}/complaints/", data=data, headers=HEADERS, timeout=300)
     elapsed = time.time() - start
     timings.append((label, elapsed))
 
@@ -65,6 +81,8 @@ def submit(label, description=None, image_class=None, lat=27.7172, lon=85.3240,
 
 
 def main():
+    login()
+
     print("== Single complaints ==")
     submit("romanized text", "road bigreko chha mhepi najikai", expect=ROADS, lat=27.7172, lon=85.3240)
     submit("devanagari text", "सडकमा ठूलो खाडल परेको छ", expect=ROADS, lat=27.7300, lon=85.3300)
@@ -90,7 +108,7 @@ def main():
            lat=27.8200, lon=85.4000)
 
     if first:
-        again = requests.get(f"{BASE}/complaints/{first['id']}/", timeout=30).json()
+        again = requests.get(f"{BASE}/complaints/{first['id']}/", headers=HEADERS, timeout=30).json()
         print(f"\nReport 1 now: duplicate_count={again['duplicate_count']} "
               f"priority={again['priority_score']} ({again['priority_level']})   "
               f"(was {first['duplicate_count']} / {first['priority_score']} when submitted)")
@@ -98,10 +116,21 @@ def main():
               "The report 2 km away should NOT be linked.")
 
     print("\n== Highest priority complaints ==")
-    listing = requests.get(f"{BASE}/complaints/?limit=10", timeout=30).json()
-    for c in listing:
+    listing = requests.get(f"{BASE}/complaints/?page_size=10", headers=HEADERS, timeout=30).json()
+    for c in listing["results"]:
         print(f"  #{c['id']:<3} {c['priority_score']:>5} {c['priority_level']:<8} {c['department']:<24} "
               f"dups={c['duplicate_count']}  {c['description'][:45]}")
+    print(f"  ({listing['count']} complaints in total)")
+
+    print("\n== Access checks ==")
+    stats = requests.get(f"{BASE}/stats/", headers=HEADERS, timeout=30)
+    print(f"stats (staff):                  {stats.status_code}  total={stats.json().get('total')}  "
+          f"needs_review={stats.json().get('needs_review')}")
+    if first:
+        track = requests.get(f"{BASE}/track/{first['tracking_code']}/", timeout=30)
+        print(f"public tracking lookup:         {track.status_code}  {track.json()}")
+    anon = requests.get(f"{BASE}/complaints/", timeout=30)
+    print(f"list without login (want 401):  {anon.status_code}")
 
     if timings:
         times = [t for _, t in timings]

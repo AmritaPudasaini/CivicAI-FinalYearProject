@@ -8,6 +8,7 @@ import Login from './pages/Login'
 import ReportIssue from './pages/ReportIssue'
 import TrackComplaint from './pages/TrackComplaint'
 import Dashboard from './pages/Dashboard'
+import ComplaintDetails from './pages/ComplaintDetails'
 
 function DashboardPlaceholder() {
   const token = localStorage.getItem('civicai_token')
@@ -79,6 +80,10 @@ export default function App() {
 
       {/* Authority dashboard */}
       <Route path="/dashboard" element={<Dashboard />} />
+      <Route
+      path="/dashboard/complaints/:id"
+      element={<ComplaintDetails />}
+/>
 
       {/* Fallback for unknown URLs */}
       <Route path="*" element={<NotFound />} />

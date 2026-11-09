@@ -8,7 +8,8 @@ services:
     environment:
       SECRET_KEY: ${DJANGO_SECRET_KEY:-change-this-development-secret-key}
       DEBUG: "False"
-      ALLOWED_HOSTS: localhost,127.0.0.1,backend
+      ALLOWED_HOSTS: localhost,127.0.0.1,backend,unstitch-demote-overvalue.ngrok-free.dev
+      CSRF_TRUSTED_ORIGINS: https://unstitch-demote-overvalue.ngrok-free.dev
       DATABASE_PATH: /data/db.sqlite3
       MEDIA_ROOT: /data/media
       STATIC_ROOT: /app/backend/staticfiles

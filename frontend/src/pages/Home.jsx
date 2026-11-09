@@ -251,7 +251,6 @@ export default function Home() {
         <p className="mt-2">
           A civic complaint management project designed for Nepal.
         </p>
-        <p className="mt-4">Final-year project demonstration</p>
       </footer>
     </main>
   )

@@ -187,6 +187,8 @@ REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.IsAdminUser"],
     "DEFAULT_THROTTLE_RATES": {
         "submissions": "1000/hour" if DEBUG else "20/hour",
+        "otp_send": "1000/hour" if DEBUG else "5/hour",
+        "otp_verify": "1000/hour" if DEBUG else "10/hour",
         "tracking": "1000/hour" if DEBUG else "60/hour",
         "login": "1000/hour" if DEBUG else "10/minute",
     },

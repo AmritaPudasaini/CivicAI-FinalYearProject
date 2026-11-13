@@ -2,6 +2,7 @@ import secrets
 
 from django.db import models
 from django.utils import timezone
+from django.conf import settings
 
 _CODE_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"   # no 0/O/1/I, to avoid mix-ups when read aloud
 
@@ -9,6 +10,62 @@ _CODE_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"   # no 0/O/1/I, to avoid mix
 def generate_tracking_code():
     return "CV-" + "".join(secrets.choice(_CODE_ALPHABET) for _ in range(8))
 
+class UserProfile(models.Model):
+    class Role(models.TextChoices):
+        CITIZEN = "citizen", "Citizen"
+        AUTHORITY = "authority", "Authority"
+
+    user = models.OneToOneField(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name="profile",
+    )
+
+    role = models.CharField(
+        max_length=20,
+        choices=Role.choices,
+        default=Role.CITIZEN,
+    )
+
+    phone_number = models.CharField(
+        max_length=20,
+        unique=True,
+        null=True,
+        blank=True,
+    )
+
+    is_phone_verified = models.BooleanField(default=False)
+
+    employee_id = models.CharField(
+        max_length=100,
+        blank=True,
+    )
+
+    department = models.CharField(
+        max_length=100,
+        blank=True,
+    )
+
+    def __str__(self):
+        return f"{self.user.username} - {self.role}"
+
+class OTPChallenge(models.Model):
+    phone_number = models.CharField(max_length=20, db_index=True)
+
+    otp_hash = models.CharField(max_length=64)
+
+    full_name = models.CharField(max_length=150, blank=True)
+
+    created_at = models.DateTimeField(default=timezone.now)
+
+    expires_at = models.DateTimeField()
+
+    attempts = models.PositiveSmallIntegerField(default=0)
+
+    is_verified = models.BooleanField(default=False)
+
+    def __str__(self):
+        return f"OTP for {self.phone_number}"
 
 class Complaint(models.Model):
     class Status(models.TextChoices):
@@ -45,6 +102,13 @@ class Complaint(models.Model):
     text_prediction = models.JSONField(null=True, blank=True)
     image_prediction = models.JSONField(null=True, blank=True)
 
+    citizen = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name="civic_complaints",
+    )
     class Meta:
         ordering = ["-priority_score", "-created_at"]
 

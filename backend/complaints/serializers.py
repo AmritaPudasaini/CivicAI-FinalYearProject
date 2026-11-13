@@ -38,6 +38,34 @@ class PublicComplaintSerializer(serializers.ModelSerializer):
         return obj.duplicate_links.exists()
 
 
+class CitizenComplaintSerializer(serializers.ModelSerializer):
+    """Complaint information visible to its submitting citizen."""
+
+    matched_existing_report = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Complaint
+        fields = [
+            "id",
+            "tracking_code",
+            "description",
+            "image",
+            "lat",
+            "lon",
+            "location_type",
+            "created_at",
+            "status",
+            "category",
+            "department",
+            "urgency_level",
+            "priority_level",
+            "matched_existing_report",
+        ]
+
+    def get_matched_existing_report(self, obj):
+        return obj.duplicate_links.exists()
+
+
 class DuplicateLinkSerializer(serializers.ModelSerializer):
     class Meta:
         model = DuplicateLink

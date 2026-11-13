@@ -23,6 +23,8 @@ export default function ReportIssue() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const [result, setResult] = useState(null)
+  const [copied, setCopied] = useState(false)
+  const [copyError, setCopyError] = useState('')
 
   function chooseImage(event) {
     const file = event.target.files?.[0]
@@ -85,6 +87,45 @@ export default function ReportIssue() {
     }))
   }
 
+    async function copyTrackingCode() {
+  const trackingCode = result?.tracking_code
+
+  if (!trackingCode) return
+
+  try {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(trackingCode)
+    } else {
+      // Fallback for HTTP or browsers without Clipboard API support.
+      const textArea = document.createElement('textarea')
+      textArea.value = trackingCode
+      textArea.style.position = 'fixed'
+      textArea.style.left = '-9999px'
+      textArea.style.top = '0'
+
+      document.body.appendChild(textArea)
+      textArea.focus()
+      textArea.select()
+
+      const successful = document.execCommand('copy')
+      document.body.removeChild(textArea)
+
+      if (!successful) {
+        throw new Error('Copy command failed')
+      }
+    }
+
+    setCopied(true)
+    setCopyError('')
+
+    setTimeout(() => {
+      setCopied(false)
+    }, 2500)
+  } catch (error) {
+    setCopied(false)
+    setCopyError('Unable to copy. Please select and copy the tracking code manually.')
+  }
+}
   async function handleSubmit(event) {
     event.preventDefault()
     setError('')
@@ -176,7 +217,7 @@ export default function ReportIssue() {
             </p>
             <button
               type="button"
-              onClick={() => navigator.clipboard?.writeText(result.tracking_code)}
+              onClick={copyTrackingCode}
               className="mt-3 text-sm font-semibold text-emerald-700 underline underline-offset-4"
             >
               Copy tracking code
@@ -226,7 +267,7 @@ export default function ReportIssue() {
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10 sm:py-14">
-      <Link to="/" className="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-emerald-700">
+      <Link to="/citizen" className="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-emerald-700">
         <ArrowLeft size={17} /> Back to home
       </Link>
 

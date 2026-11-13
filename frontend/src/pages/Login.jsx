@@ -24,7 +24,10 @@ export default function Login() {
     });
 
       saveToken(response.data.token)
-      navigate('/dashboard', { replace: true })
+      localStorage.setItem('civicai_role', response.data.role)
+      localStorage.setItem('civicai_username', response.data.username)
+
+navigate('/dashboard', { replace: true })
     } catch (err) {
       const data = err.response?.data
       let message = 'Unable to sign in. Please try again.'

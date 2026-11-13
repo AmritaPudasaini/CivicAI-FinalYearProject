@@ -49,7 +49,7 @@ def _existing_for_engine(now):
     ]
 
 
-def submit_complaint(description, image, lat, lon, location_type):
+def submit_complaint(description, image, lat, lon, location_type, citizen=None):
     """Run the engine on a new complaint, save it, and update the complaints it duplicates."""
     from civicai_finalyearproject import engine
 
@@ -70,6 +70,7 @@ def submit_complaint(description, image, lat, lon, location_type):
     with transaction.atomic():
         complaint = Complaint.objects.create(
             description=result["description"],
+            citizen=citizen,
             image=image,
             lat=lat,
             lon=lon,

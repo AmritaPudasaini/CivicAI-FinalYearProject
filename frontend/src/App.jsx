@@ -1,47 +1,45 @@
 
 import { Link, Navigate, Route, Routes } from 'react-router-dom'
-import { ArrowLeft, ClipboardList } from 'lucide-react'
 
 import CitizenLayout from './layouts/CitizenLayout'
+import RoleSelection from './pages/RoleSelection'
+import CitizenLogin from './pages/CitizenLogin'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import ReportIssue from './pages/ReportIssue'
 import TrackComplaint from './pages/TrackComplaint'
 import Dashboard from './pages/Dashboard'
 import ComplaintDetails from './pages/ComplaintDetails'
+import MyReports from './pages/MyReports'
 
-function DashboardPlaceholder() {
+function RequireCitizen({ children }) {
   const token = localStorage.getItem('civicai_token')
+  const role = localStorage.getItem('civicai_role')
+
+  if (!token) {
+    return <Navigate to="/citizen/login" replace />
+  }
+
+  if (role !== 'citizen') {
+    return <Navigate to="/" replace />
+  }
+
+  return children
+}
+
+function RequireAuthority({ children }) {
+  const token = localStorage.getItem('civicai_token')
+  const role = localStorage.getItem('civicai_role')
 
   if (!token) {
     return <Navigate to="/login" replace />
   }
 
-  return (
-    <main className="mx-auto max-w-3xl px-4 py-16 text-center">
-      <ClipboardList
-        size={42}
-        className="mx-auto text-emerald-700"
-      />
+  if (role !== 'authority') {
+    return <Navigate to="/" replace />
+  }
 
-      <h1 className="mt-5 text-3xl font-extrabold text-slate-900">
-        Authority dashboard
-      </h1>
-
-      <p className="mt-3 leading-7 text-slate-600">
-        Your authentication is saved. The dashboard will display complaint
-        records, AI-assisted priorities, and statistics.
-      </p>
-
-      <Link
-        to="/"
-        className="mt-6 inline-flex items-center gap-2 rounded-xl bg-emerald-700 px-5 py-3 font-semibold text-white hover:bg-emerald-800"
-      >
-        <ArrowLeft size={17} />
-        Back to home
-      </Link>
-    </main>
-  )
+  return children
 }
 
 function NotFound() {
@@ -68,24 +66,51 @@ function NotFound() {
 export default function App() {
   return (
     <Routes>
-      {/* Citizen pages share the citizen navigation and layout. */}
-      <Route element={<CitizenLayout />}>
-        <Route path="/" element={<Home />} />
+      {/* Public role selection */}
+      <Route path="/" element={<RoleSelection />} />
+
+      {/* Citizen authentication */}
+      <Route path="/citizen/login" element={<CitizenLogin />} />
+
+      {/* Public complaint tracking */}
+      <Route path="/track" element={<TrackComplaint />} />
+
+      {/* Protected citizen pages */}
+      <Route
+        element={
+          <RequireCitizen>
+            <CitizenLayout />
+          </RequireCitizen>
+        }
+      >
+        <Route path="/citizen" element={<Home />} />
         <Route path="/report" element={<ReportIssue />} />
-        <Route path="/track" element={<TrackComplaint />} />
+        <Route path="/my-reports" element={<MyReports />} />
       </Route>
 
-      {/* Authentication */}
+      {/* Authority authentication */}
       <Route path="/login" element={<Login />} />
 
-      {/* Authority dashboard */}
-      <Route path="/dashboard" element={<Dashboard />} />
+      {/* Protected authority pages */}
       <Route
-      path="/dashboard/complaints/:id"
-      element={<ComplaintDetails />}
-/>
+        path="/dashboard"
+        element={
+          <RequireAuthority>
+            <Dashboard />
+          </RequireAuthority>
+        }
+      />
 
-      {/* Fallback for unknown URLs */}
+      <Route
+        path="/dashboard/complaints/:id"
+        element={
+          <RequireAuthority>
+            <ComplaintDetails />
+          </RequireAuthority>
+        }
+      />
+
+      {/* Unknown URLs */}
       <Route path="*" element={<NotFound />} />
     </Routes>
   )

@@ -8,11 +8,22 @@ const api = axios.create({
   },
 })
 
-// Attach the Django REST Framework token when available.
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem('civicai_token')
 
-  if (token) {
+  const publicAuthEndpoints = [
+    '/auth/login/',
+    '/auth/citizen/send-otp/',
+    '/auth/citizen/verify-otp/',
+  ]
+
+  const isPublicAuthRequest = publicAuthEndpoints.some(
+    (endpoint) => config.url?.includes(endpoint)
+  )
+
+  if (isPublicAuthRequest) {
+    delete config.headers.Authorization
+  } else if (token) {
     config.headers.Authorization = `Token ${token}`
   }
 

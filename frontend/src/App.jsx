@@ -71,12 +71,8 @@ export default function App() {
       <Route path="/" element={<RoleSelection />} />
 
       {/* Citizen authentication */}
-      {/* Citizen authentication */}
       <Route path="/citizen/login" element={<CitizenLogin />} />
       <Route path="/citizen/register" element={<CitizenRegister />} />
-
-      {/* Public complaint tracking */}
-      <Route path="/track" element={<TrackComplaint />} />
 
       {/* Protected citizen pages */}
       <Route
@@ -89,6 +85,7 @@ export default function App() {
         <Route path="/citizen" element={<Home />} />
         <Route path="/report" element={<ReportIssue />} />
         <Route path="/my-reports" element={<MyReports />} />
+        <Route path="/track" element={<TrackComplaint />} />
       </Route>
 
       {/* Authority authentication */}

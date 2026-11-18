@@ -15,6 +15,8 @@ api.interceptors.request.use((config) => {
     '/auth/login/',
     '/auth/citizen/send-otp/',
     '/auth/citizen/verify-otp/',
+    '/auth/citizen/register/',
+    '/auth/citizen/login/',
   ]
 
   const isPublicAuthRequest = publicAuthEndpoints.some(

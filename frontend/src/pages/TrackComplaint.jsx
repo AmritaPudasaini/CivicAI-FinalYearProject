@@ -1,10 +1,11 @@
 
 import { useEffect, useState } from 'react'
-import { Link, useSearchParams } from 'react-router-dom'
+import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 import { ArrowLeft, Search, ClipboardCheck, AlertCircle } from 'lucide-react'
 import api from '../services/api'
 
 export default function TrackComplaint() {
+  const navigate = useNavigate()
   const [searchParams] = useSearchParams()
   const [code, setCode] = useState(searchParams.get('code') || '')
   const [complaint, setComplaint] = useState(null)
@@ -54,9 +55,13 @@ export default function TrackComplaint() {
 
   return (
     <main className="mx-auto max-w-2xl px-4 py-10 sm:py-14">
-      <Link to="/" className="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-emerald-700">
-        <ArrowLeft size={17} /> Back to home
-      </Link>
+      <button
+        type="button"
+        onClick={() => navigate(-1)}
+        className="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 transition hover:text-emerald-700"
+      >
+        <ArrowLeft size={17} /> Go back
+      </button>
 
       <div className="mt-6">
         <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-700">

@@ -1,0 +1,345 @@
+
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+
+{% block extrastyle %}
+{{ block.super }}
+<style>
+    .civic-dashboard {
+        margin-bottom: 30px;
+    }
+
+    .civic-dashboard h1 {
+        font-size: 26px;
+        font-weight: 700;
+        margin-bottom: 6px;
+    }
+
+    .civic-subtitle {
+        color: var(--body-quiet-color);
+        margin-bottom: 24px;
+    }
+
+    .civic-section-title {
+        font-size: 18px;
+        font-weight: 700;
+        margin: 28px 0 14px;
+    }
+
+    .civic-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+        margin-bottom: 22px;
+    }
+
+    .civic-card {
+        background: var(--body-bg);
+        border: 1px solid var(--hairline-color);
+        border-radius: 10px;
+        padding: 20px;
+        min-width: 0;
+    }
+
+    .civic-card-label {
+        color: var(--body-quiet-color);
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+    .civic-card-value {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .civic-card-link {
+        display: inline-block;
+        margin-top: 12px;
+        font-size: 12px;
+    }
+
+    .civic-blue {
+        border-top: 4px solid #3b82f6;
+    }
+
+    .civic-green {
+        border-top: 4px solid #10b981;
+    }
+
+    .civic-orange {
+        border-top: 4px solid #f59e0b;
+    }
+
+    .civic-red {
+        border-top: 4px solid #ef4444;
+    }
+
+    .civic-purple {
+        border-top: 4px solid #8b5cf6;
+    }
+
+    .civic-table-wrapper {
+        overflow-x: auto;
+        border: 1px solid var(--hairline-color);
+        border-radius: 10px;
+        margin-bottom: 24px;
+    }
+
+    .civic-table {
+        width: 100%;
+        border-collapse: collapse;
+        background: var(--body-bg);
+    }
+
+    .civic-table th,
+    .civic-table td {
+        padding: 13px 15px;
+        text-align: left;
+        border-bottom: 1px solid var(--hairline-color);
+    }
+
+    .civic-table th {
+        font-weight: 700;
+        background: var(--darkened-bg);
+        white-space: nowrap;
+    }
+
+    .civic-table tr:last-child td {
+        border-bottom: none;
+    }
+
+    .civic-pill {
+        display: inline-block;
+        padding: 4px 10px;
+        border-radius: 20px;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+
+    .civic-status-open {
+        background: #fef3c7;
+        color: #92400e;
+    }
+
+    .civic-status-progress {
+        background: #dbeafe;
+        color: #1e40af;
+    }
+
+    .civic-status-resolved {
+        background: #d1fae5;
+        color: #065f46;
+    }
+
+    .civic-priority-high {
+        background: #fee2e2;
+        color: #991b1b;
+    }
+
+    .civic-priority-medium {
+        background: #fef3c7;
+        color: #92400e;
+    }
+
+    .civic-priority-low {
+        background: #d1fae5;
+        color: #065f46;
+    }
+
+    .civic-empty {
+        text-align: center !important;
+        color: var(--body-quiet-color);
+        padding: 25px !important;
+    }
+
+    @media (max-width: 1100px) {
+        .civic-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    @media (max-width: 600px) {
+        .civic-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .civic-card-value {
+            font-size: 25px;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div id="content-main" class="civic-dashboard">
+
+    <h1>CIVICAI System Overview</h1>
+    <p class="civic-subtitle">
+        Monitor citizens, authorities, civic complaints, and AI-based prioritization.
+    </p>
+
+    <h2 class="civic-section-title">System Statistics</h2>
+
+    <div class="civic-grid">
+
+        <div class="civic-card civic-blue">
+            <div class="civic-card-label">Total Citizens</div>
+            <div class="civic-card-value">{{ civic_stats.total_citizens }}</div>
+            <a class="civic-card-link" href="{% url 'admin:complaints_userprofile_changelist' %}?role=citizen">
+                Manage citizens →
+            </a>
+        </div>
+
+        <div class="civic-card civic-purple">
+            <div class="civic-card-label">Authority Accounts</div>
+            <div class="civic-card-value">{{ civic_stats.total_authorities }}</div>
+            <a class="civic-card-link" href="{% url 'admin:complaints_userprofile_changelist' %}?role=authority">
+                Manage authorities →
+            </a>
+        </div>
+
+        <div class="civic-card civic-green">
+            <div class="civic-card-label">Total Complaints</div>
+            <div class="civic-card-value">{{ civic_stats.total_complaints }}</div>
+            <a class="civic-card-link" href="{% url 'admin:complaints_complaint_changelist' %}">
+                View all complaints →
+            </a>
+        </div>
+
+        <div class="civic-card civic-red">
+            <div class="civic-card-label">Needs Review</div>
+            <div class="civic-card-value">{{ civic_stats.needs_review }}</div>
+            <a class="civic-card-link" href="{% url 'admin:complaints_complaint_changelist' %}?needs_review__exact=1">
+                Review complaints →
+            </a>
+        </div>
+
+    </div>
+
+    <h2 class="civic-section-title">Complaint Status</h2>
+
+    <div class="civic-grid">
+
+        <div class="civic-card civic-orange">
+            <div class="civic-card-label">Open Complaints</div>
+            <div class="civic-card-value">{{ civic_stats.open_complaints }}</div>
+            <a class="civic-card-link" href="{% url 'admin:complaints_complaint_changelist' %}?status=open">
+                View open complaints →
+            </a>
+        </div>
+
+        <div class="civic-card civic-blue">
+            <div class="civic-card-label">In Progress</div>
+            <div class="civic-card-value">{{ civic_stats.in_progress }}</div>
+            <a class="civic-card-link" href="{% url 'admin:complaints_complaint_changelist' %}?status=in_progress">
+                View in-progress complaints →
+            </a>
+        </div>
+
+        <div class="civic-card civic-green">
+            <div class="civic-card-label">Resolved</div>
+            <div class="civic-card-value">{{ civic_stats.resolved }}</div>
+            <a class="civic-card-link" href="{% url 'admin:complaints_complaint_changelist' %}?status=resolved">
+                View resolved complaints →
+            </a>
+        </div>
+
+        <div class="civic-card">
+            <div class="civic-card-label">All Complaints</div>
+            <div class="civic-card-value">{{ civic_stats.total_complaints }}</div>
+            <a class="civic-card-link" href="{% url 'admin:complaints_complaint_changelist' %}">
+                Open complaint management →
+            </a>
+        </div>
+
+    </div>
+
+    <h2 class="civic-section-title">AI Priority Distribution</h2>
+
+    <div class="civic-grid">
+
+        <div class="civic-card civic-red">
+            <div class="civic-card-label">High Priority</div>
+            <div class="civic-card-value">{{ civic_stats.high_priority }}</div>
+        </div>
+
+        <div class="civic-card civic-orange">
+            <div class="civic-card-label">Medium Priority</div>
+            <div class="civic-card-value">{{ civic_stats.medium_priority }}</div>
+        </div>
+
+        <div class="civic-card civic-green">
+            <div class="civic-card-label">Low Priority</div>
+            <div class="civic-card-value">{{ civic_stats.low_priority }}</div>
+        </div>
+
+    </div>
+
+    <h2 class="civic-section-title">Recent Complaints</h2>
+
+    <div class="civic-table-wrapper">
+        <table class="civic-table">
+            <thead>
+                <tr>
+                    <th>Tracking Code</th>
+                    <th>Category</th>
+                    <th>Department</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                    <th>Created</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for complaint in civic_stats.recent_complaints %}
+                <tr>
+                    <td>
+                        <a href="{% url 'admin:complaints_complaint_change' complaint.id %}">
+                            {{ complaint.tracking_code }}
+                        </a>
+                    </td>
+
+                    <td>{{ complaint.category|default:"—" }}</td>
+                    <td>{{ complaint.department|default:"—" }}</td>
+
+                    <td>
+                        <span class="civic-pill civic-priority-{{ complaint.priority_level|lower }}">
+                            {{ complaint.priority_level|default:"Unknown" }}
+                        </span>
+                    </td>
+
+                    <td>
+                        {% if complaint.status == "open" %}
+                            <span class="civic-pill civic-status-open">Open</span>
+                        {% elif complaint.status == "in_progress" %}
+                            <span class="civic-pill civic-status-progress">In Progress</span>
+                        {% elif complaint.status == "resolved" %}
+                            <span class="civic-pill civic-status-resolved">Resolved</span>
+                        {% else %}
+                            {{ complaint.get_status_display }}
+                        {% endif %}
+                    </td>
+
+                    <td>{{ complaint.created_at|date:"Y-m-d H:i" }}</td>
+                </tr>
+
+                {% empty %}
+                <tr>
+                    <td colspan="6" class="civic-empty">
+                        No complaints submitted yet.
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="civic-section-title">System Management</h2>
+
+    {% include "admin/app_list.html" with app_list=app_list show_changelinks=True %}
+
+</div>
+{% endblock %}

@@ -54,7 +54,7 @@ class ComplaintPagination(PageNumberPagination):
 # ---------------- Authentication ----------------
 class LoginView(ObtainAuthToken):
     """Authority username/password login."""
-
+    authentication_classes = []
     permission_classes = [AllowAny]
     throttle_classes = [LoginThrottle]
 
@@ -187,9 +187,13 @@ class ComplaintListCreateView(APIView):
 class ComplaintDetailView(RetrieveAPIView):
     """Authority-only access to an individual complaint."""
 
-    queryset = Complaint.objects.prefetch_related("duplicate_links")
-    serializer_class = ComplaintSerializer
     permission_classes = [IsAuthority]
+    serializer_class = ComplaintSerializer
+
+    queryset = Complaint.objects.select_related(
+        "citizen",
+        "citizen__profile",
+    ).prefetch_related("duplicate_links")
 
 
 class ComplaintStatusView(APIView):

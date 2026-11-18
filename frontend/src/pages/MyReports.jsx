@@ -79,8 +79,12 @@ export default function MyReports() {
       setPreviousPage(data.previous ? pageNumber - 1 : null)
       setPage(pageNumber)
     } catch (err) {
-      if (err.response?.status === 401 || err.response?.status === 403) {
+      if (err.response?.status === 401) {
         clearToken()
+        localStorage.removeItem('civicai_role')
+        localStorage.removeItem('civicai_username')
+        localStorage.removeItem('civicai_full_name')
+
         navigate('/citizen/login', { replace: true })
         return
       }

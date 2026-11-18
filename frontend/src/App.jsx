@@ -11,6 +11,7 @@ import TrackComplaint from './pages/TrackComplaint'
 import Dashboard from './pages/Dashboard'
 import ComplaintDetails from './pages/ComplaintDetails'
 import MyReports from './pages/MyReports'
+import CitizenRegister from './pages/CitizenRegister'
 
 function RequireCitizen({ children }) {
   const token = localStorage.getItem('civicai_token')
@@ -70,7 +71,9 @@ export default function App() {
       <Route path="/" element={<RoleSelection />} />
 
       {/* Citizen authentication */}
+      {/* Citizen authentication */}
       <Route path="/citizen/login" element={<CitizenLogin />} />
+      <Route path="/citizen/register" element={<CitizenRegister />} />
 
       {/* Public complaint tracking */}
       <Route path="/track" element={<TrackComplaint />} />

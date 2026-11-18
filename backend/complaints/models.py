@@ -35,7 +35,10 @@ class UserProfile(models.Model):
     )
 
     is_phone_verified = models.BooleanField(default=False)
-
+    address = models.CharField(
+        max_length=255,
+        blank=True,
+    )
     employee_id = models.CharField(
         max_length=100,
         blank=True,

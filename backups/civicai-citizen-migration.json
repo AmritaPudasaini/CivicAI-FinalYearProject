@@ -1,0 +1,100 @@
+{
+  "users": [
+    {
+      "username": "pudasaineeamrita7@gmail.com",
+      "email": "pudasaineeamrita7@gmail.com",
+      "password": "pbkdf2_sha256$1500000$DqUXukYSbtzILkRg8DtHRv$oqIhKl+8fBa+d4PJjLYQAsOBCtv+oSN5AGVe6eV8jm4=",
+      "first_name": "Amrita Pudasaini",
+      "last_name": "",
+      "is_active": true,
+      "is_staff": false,
+      "is_superuser": false,
+      "last_login": null,
+      "date_joined": "2026-11-18T05:40:52.192Z"
+    },
+    {
+      "username": "pudasainiamrita35@gmail.com",
+      "email": "pudasainiamrita35@gmail.com",
+      "password": "pbkdf2_sha256$1500000$ODwZfTKqWEpTHq40qbh15d$nLIzdkJ5hTBIQdBMvRt48Wg4CVXK+YK984yHzyMHm24=",
+      "first_name": "Amrita Pudasaini",
+      "last_name": "",
+      "is_active": true,
+      "is_staff": false,
+      "is_superuser": false,
+      "last_login": null,
+      "date_joined": "2026-11-18T05:03:49.424Z"
+    }
+  ],
+  "profiles": [
+    {
+      "email": "pudasaineeamrita7@gmail.com",
+      "role": "citizen",
+      "phone_number": null,
+      "is_phone_verified": false,
+      "address": "samakhushi",
+      "employee_id": "",
+      "department": ""
+    },
+    {
+      "email": "pudasainiamrita35@gmail.com",
+      "role": "citizen",
+      "phone_number": null,
+      "is_phone_verified": false,
+      "address": "samakhushi",
+      "employee_id": "",
+      "department": ""
+    }
+  ],
+  "complaints": [
+    {
+      "id": 31,
+      "citizen_email": "pudasainiamrita35@gmail.com",
+      "tracking_code": "CV-4FUY4T6W",
+      "description": "there's a garbage been collected in balaju chowk",
+      "image": "complaints/2026/11/images.jpeg",
+      "lat": 27.7151744,
+      "lon": 85.3082112,
+      "location_type": "road",
+      "created_at": "2026-11-18T05:19:53.118Z",
+      "status": "open",
+      "category": "garbage",
+      "department": "Solid Waste Management",
+      "routing_source": "text_fallback",
+      "needs_review": true,
+      "routing_reason": "Image confidence too low, used text; text confidence is low",
+      "urgency_level": "high",
+      "urgency_source": "urgency_model",
+      "base_score": 6.46,
+      "duplicate_count": 0,
+      "priority_score": 6.46,
+      "priority_level": "medium",
+      "text_prediction": {
+        "label": "garbage",
+        "confidence": 0.29605090618133545,
+        "probs": {
+          "domestic_trash": 0.11016803979873657,
+          "drainage": 0.09844448417425156,
+          "garbage": 0.29605090618133545,
+          "illegal_parking": 0.05529453605413437,
+          "infrastructure": 0.07021632045507431,
+          "pothole": 0.16212531924247742,
+          "road_damaged_sign": 0.04627687484025955,
+          "trash": 0.11999975144863129,
+          "vandalism": 0.041423819959163666
+        }
+      },
+      "image_prediction": {
+        "label": "Garbage_Waste_Trash",
+        "confidence": 0.6097819805145264,
+        "probs": {
+          "Garbage_Waste_Trash": 0.6097819805145264,
+          "Infrastructure_Damage_Concrete": 0.0004629823088180274,
+          "Parking_Issues_Illegal_Parking": 0.009638568386435509,
+          "Road_Issues_Damaged_Sign": 0.0001070026119123213,
+          "Road_Issues_Pothole": 0.08776146918535233,
+          "Vandalism_Graffiti": 0.292248010635376
+        }
+      }
+    }
+  ]
+}

@@ -77,7 +77,7 @@ export default function RoleSelection() {
 
               <div className="mt-7 flex items-center justify-between">
                 <span className="text-sm font-semibold text-emerald-400">
-                  Continue with mobile OTP
+                  Continue with email and password. A verified citizen account is required.
                 </span>
                 <ArrowRight
                   size={21}
@@ -110,7 +110,7 @@ export default function RoleSelection() {
 
               <div className="mt-7 flex items-center justify-between">
                 <span className="text-sm font-semibold text-sky-400">
-                  Continue with staff credentials
+                  Continue with staff credentials.
                 </span>
                 <ArrowRight
                   size={21}

@@ -83,10 +83,11 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
+                "complaints.context_processors.civic_stats",
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
@@ -106,11 +107,10 @@ DATABASES = {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": os.environ.get(
             "DATABASE_PATH",
-            str(BASE_DIR / "db.sqlite3")
+            str(PROJECT_ROOT / "data" / "db.sqlite3")
         ),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/6.1/ref/settings/#auth-password-validators
@@ -142,7 +142,7 @@ TIME_ZONE = "Asia/Kathmandu"
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.environ.get(
     "MEDIA_ROOT",
-    str(BASE_DIR / "media")
+    str(PROJECT_ROOT / "data" / "media")
 )
 
 # Frontends allowed to call the API during development

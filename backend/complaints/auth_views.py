@@ -9,10 +9,11 @@ from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.throttling import ScopedRateThrottle
 from rest_framework.views import APIView
-
+from django.contrib.auth import authenticate
+from rest_framework import serializers
 from .models import UserProfile
 from .otp import create_otp_challenge, verify_otp
-
+from .serializers import CitizenRegisterSerializer
 
 class SendOTPThrottle(ScopedRateThrottle):
     scope = "otp_send"
@@ -20,6 +21,88 @@ class SendOTPThrottle(ScopedRateThrottle):
 
 class VerifyOTPThrottle(ScopedRateThrottle):
     scope = "otp_verify"
+
+
+class CitizenRegisterView(APIView):
+    authentication_classes = []
+    permission_classes = [AllowAny]
+    throttle_classes = [SendOTPThrottle]
+
+    def post(self, request):
+        serializer = CitizenRegisterSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+
+        user = serializer.save()
+
+        return Response(
+            {
+                "detail": "Citizen account created successfully.",
+                "email": user.email,
+                "full_name": user.first_name,
+            },
+            status=http.HTTP_201_CREATED,
+        )
+
+
+class CitizenLoginView(APIView):
+    authentication_classes = []
+    permission_classes = [AllowAny]
+    throttle_classes = [VerifyOTPThrottle]
+
+    def post(self, request):
+        email = request.data.get("email", "")
+        password = request.data.get("password", "")
+
+        if not isinstance(email, str) or not isinstance(password, str):
+            return Response(
+                {"detail": "Enter a valid email and password."},
+                status=http.HTTP_400_BAD_REQUEST,
+            )
+
+        email = email.strip().lower()
+
+        if not email or not password:
+            return Response(
+                {"detail": "Email and password are required."},
+                status=http.HTTP_400_BAD_REQUEST,
+            )
+
+        user = authenticate(
+            request,
+            username=email,
+            password=password,
+        )
+
+        if user is None:
+            return Response(
+                {"detail": "Invalid email or password."},
+                status=http.HTTP_401_UNAUTHORIZED,
+            )
+
+        profile = UserProfile.objects.filter(
+            user=user,
+            role=UserProfile.Role.CITIZEN,
+        ).first()
+
+        if profile is None:
+            return Response(
+                {"detail": "This account does not have citizen access."},
+                status=http.HTTP_403_FORBIDDEN,
+            )
+
+        token, _ = Token.objects.get_or_create(user=user)
+
+        return Response(
+            {
+                "token": token.key,
+                "username": user.username,
+                "email": user.email,
+                "full_name": user.first_name,
+                "address": profile.address,
+                "role": profile.role,
+            },
+            status=http.HTTP_200_OK,
+        )
 
 
 class CitizenSendOTPView(APIView):

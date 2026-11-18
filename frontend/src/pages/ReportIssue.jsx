@@ -1,6 +1,6 @@
 
 import { useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import {
   ArrowLeft,
   CheckCircle2,
@@ -13,6 +13,7 @@ import {
 import api from '../services/api'
 
 export default function ReportIssue() {
+  const navigate = useNavigate()
   const fileInput = useRef(null)
   const [description, setDescription] = useState('')
   const [image, setImage] = useState(null)
@@ -267,9 +268,13 @@ export default function ReportIssue() {
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10 sm:py-14">
-      <Link to="/citizen" className="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-emerald-700">
-        <ArrowLeft size={17} /> Back to home
-      </Link>
+      <button
+        type="button"
+        onClick={() => navigate(-1)}
+        className="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 transition hover:text-emerald-700"
+      >
+        <ArrowLeft size={17} /> Go back
+      </button>
 
       <div className="mt-6">
         <p className="text-sm font-bold uppercase tracking-widest text-emerald-700">

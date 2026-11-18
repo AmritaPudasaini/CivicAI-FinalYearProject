@@ -9,6 +9,8 @@ urlpatterns = [
 
     path("auth/citizen/send-otp/", auth_views.CitizenSendOTPView.as_view()),
     path("auth/citizen/verify-otp/", auth_views.CitizenVerifyOTPView.as_view()),
+    path("auth/citizen/register/", auth_views.CitizenRegisterView.as_view()),
+    path("auth/citizen/login/", auth_views.CitizenLoginView.as_view()),
     path(
     "citizen/complaints/",
     views.CitizenComplaintListView.as_view(),

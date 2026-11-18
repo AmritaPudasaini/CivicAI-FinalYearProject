@@ -22,9 +22,9 @@ class IsAuthority(BasePermission):
 
 
 class IsCitizen(BasePermission):
-    """Allow only authenticated citizens with verified phone numbers."""
+    """Allow authenticated citizen accounts."""
 
-    message = "A verified citizen account is required."
+    message = "Citizen account access is required."
 
     def has_permission(self, request, view):
         user = request.user
@@ -35,5 +35,4 @@ class IsCitizen(BasePermission):
         return UserProfile.objects.filter(
             user=user,
             role=UserProfile.Role.CITIZEN,
-            is_phone_verified=True,
         ).exists()

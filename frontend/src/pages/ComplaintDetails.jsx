@@ -1,4 +1,3 @@
-
 import { useCallback, useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import {
@@ -90,8 +89,14 @@ function getImageUrl(image) {
     return image
   }
 
-  const apiBase = import.meta.env.VITE_API_BASE_URL
-  const serverOrigin = new URL(apiBase, window.location.origin).origin
+  // Local development uses Django on port 8000.
+  // Deployed application uses the same origin as the website.
+  const serverOrigin = import.meta.env.DEV
+    ? new URL(
+        import.meta.env.VITE_API_BASE_URL,
+        window.location.origin,
+      ).origin
+    : window.location.origin
 
   return `${serverOrigin}${image.startsWith('/') ? '' : '/'}${image}`
 }
@@ -100,6 +105,98 @@ function getDuplicateMatches(value) {
   if (Array.isArray(value)) return value
   if (value && typeof value === 'object') return Object.values(value)
   return []
+}
+
+function CitizenDetail({ label, value }) {
+  return (
+    <div>
+      <dt className="text-slate-500">{label}</dt>
+      <dd className="mt-1 break-words font-medium text-slate-900">
+        {value || 'Not provided'}
+      </dd>
+    </div>
+  )
+}
+
+function CitizenInformation({ citizen }) {
+  if (!citizen) {
+    return (
+      <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+        <div className="flex items-center gap-3">
+          <ClipboardList className="text-emerald-700" size={21} />
+          <h2 className="text-lg font-bold text-slate-900">
+            Citizen Information
+          </h2>
+        </div>
+
+        <p className="mt-5 rounded-xl bg-slate-50 p-4 text-sm leading-6 text-slate-500">
+          Citizen account information is unavailable for this complaint.
+        </p>
+      </section>
+    )
+  }
+
+  return (
+    <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <div className="flex items-center gap-3">
+        <ClipboardList className="text-emerald-700" size={21} />
+        <h2 className="text-lg font-bold text-slate-900">
+          Citizen Information
+        </h2>
+      </div>
+
+      <dl className="mt-5 space-y-4 text-sm">
+        <CitizenDetail
+          label="Full name"
+          value={citizen.full_name}
+        />
+
+        <CitizenDetail
+          label="Email address"
+          value={citizen.email}
+        />
+
+        <CitizenDetail
+          label="Phone number"
+          value={citizen.phone_number}
+        />
+
+        <CitizenDetail
+          label="Residential address"
+          value={citizen.address}
+        />
+
+        <CitizenDetail
+          label="Account registration"
+          value={
+            citizen.date_joined
+              ? formatDate(citizen.date_joined)
+              : 'Unavailable'
+          }
+        />
+
+        <CitizenDetail
+          label="Account role"
+          value={formatLabel(citizen.account_role)}
+        />
+
+        <div>
+          <dt className="text-slate-500">Phone verification</dt>
+          <dd className="mt-1">
+            <span
+              className={`inline-flex rounded-full px-3 py-1 text-xs font-semibold ${
+                citizen.phone_verified
+                  ? 'bg-emerald-100 text-emerald-800'
+                  : 'bg-amber-100 text-amber-800'
+              }`}
+            >
+              {citizen.phone_verified ? 'Verified' : 'Not verified'}
+            </span>
+          </dd>
+        </div>
+      </dl>
+    </section>
+  )
 }
 
 export default function ComplaintDetails() {
@@ -258,6 +355,7 @@ export default function ComplaintDetails() {
   }
 
   const imageUrl = getImageUrl(complaint.image)
+
   const duplicateMatches = getDuplicateMatches(
     complaint.duplicate_matches,
   )
@@ -293,6 +391,7 @@ export default function ComplaintDetails() {
             <p className="text-sm font-bold uppercase tracking-wider text-emerald-700">
               CIVICAI Authority
             </p>
+
             <h1 className="mt-1 text-xl font-extrabold text-slate-900">
               Complaint details
             </h1>
@@ -392,6 +491,7 @@ export default function ComplaintDetails() {
             <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
               <div className="flex items-center gap-3">
                 <ClipboardList className="text-emerald-700" size={22} />
+
                 <h2 className="text-lg font-bold text-slate-900">
                   Reported issue
                 </h2>
@@ -401,6 +501,7 @@ export default function ComplaintDetails() {
                 <p className="text-sm font-semibold text-slate-500">
                   Description
                 </p>
+
                 <p className="mt-2 whitespace-pre-wrap leading-7 text-slate-800">
                   {complaint.description ||
                     'No text description was provided.'}
@@ -410,10 +511,12 @@ export default function ComplaintDetails() {
               <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
                 <InfoCard label="Category" value={complaint.category} />
                 <InfoCard label="Department" value={complaint.department} />
+
                 <InfoCard
                   label="Location type"
                   value={complaint.location_type}
                 />
+
                 <InfoCard
                   label="Urgency level"
                   value={complaint.urgency_level}
@@ -453,6 +556,7 @@ export default function ComplaintDetails() {
             <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
               <div className="flex items-center gap-3">
                 <ImageIcon className="text-emerald-700" size={22} />
+
                 <h2 className="text-lg font-bold text-slate-900">
                   Submitted image
                 </h2>
@@ -470,6 +574,7 @@ export default function ComplaintDetails() {
               ) : (
                 <div className="mt-5 flex min-h-36 flex-col items-center justify-center rounded-xl border border-dashed border-slate-300 bg-slate-50 p-6 text-center text-slate-500">
                   <ImageIcon size={30} />
+
                   <p className="mt-2 text-sm">
                     No image was submitted.
                   </p>
@@ -481,6 +586,7 @@ export default function ComplaintDetails() {
             <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
               <div className="flex items-center gap-3">
                 <BrainCircuit className="text-emerald-700" size={22} />
+
                 <h2 className="text-lg font-bold text-slate-900">
                   AI assessment
                 </h2>
@@ -577,6 +683,7 @@ export default function ComplaintDetails() {
             <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
               <div className="flex items-center gap-3">
                 <CopyCheck className="text-violet-700" size={22} />
+
                 <h2 className="text-lg font-bold text-slate-900">
                   Duplicate complaint analysis
                 </h2>
@@ -586,6 +693,7 @@ export default function ComplaintDetails() {
                 <p className="text-sm text-violet-800">
                   Similar or duplicate reports recorded
                 </p>
+
                 <p className="mt-1 text-3xl font-extrabold text-violet-900">
                   {Number.isFinite(Number(complaint.duplicate_count))
                     ? Number(complaint.duplicate_count)
@@ -607,7 +715,9 @@ export default function ComplaintDetails() {
 
                     const trackingCode =
                       typeof match === 'object' && match !== null
-                        ? match.tracking_code || match.id || `Match ${index + 1}`
+                        ? match.tracking_code ||
+                          match.id ||
+                          `Match ${index + 1}`
                         : match
 
                     return (
@@ -642,6 +752,7 @@ export default function ComplaintDetails() {
               ) : (
                 <div className="mt-4 flex items-start gap-2 text-sm leading-6 text-slate-500">
                   <CircleHelp size={18} className="mt-0.5 shrink-0" />
+
                   <p>
                     The backend has not supplied individual duplicate
                     matches for display. The count above is the value
@@ -655,9 +766,16 @@ export default function ComplaintDetails() {
 
           {/* Authority actions and record information */}
           <aside className="space-y-6">
+            {/* Citizen information */}
+            <CitizenInformation
+              citizen={complaint.citizen_information}
+            />
+
+            {/* Manage complaint */}
             <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
               <div className="flex items-center gap-3">
                 <Save className="text-emerald-700" size={21} />
+
                 <h2 className="text-lg font-bold text-slate-900">
                   Manage complaint
                 </h2>
@@ -716,9 +834,14 @@ export default function ComplaintDetails() {
               </form>
             </section>
 
+            {/* Record information */}
             <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
               <div className="flex items-center gap-3">
-                <CalendarDays className="text-emerald-700" size={21} />
+                <CalendarDays
+                  className="text-emerald-700"
+                  size={21}
+                />
+
                 <h2 className="text-lg font-bold text-slate-900">
                   Record information
                 </h2>
